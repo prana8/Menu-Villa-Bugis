@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Breakfast Villa Bugis</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Guest</h1>
+    <div class="box">
+      <label for="name">Guest</label>
+      <div class="decguest button">-</div>
+      <input type="text" name="qty" id="guest-input" value="0" class="guest-input" />
+      <div class="incguest button">+</div>
+    </div>
+
+    <h1>
+      Breakfast Menu
+      <br />
+      Villa Bugis
+    </h1>
+    <div class="box">
+      <label for="name">Menu A:</label>
+      <div class="decMenu button">-</div>
+      <input type="text" name="qty" id="inputmenu" value="0" class="inputmenu" />
+      <div class="incMenu button">+</div>
+    </div>
+
+    <div class="box">
+      <label for="name">Menu B:</label>
+      <div class="decMenu button">-</div>
+      <input type="text" name="qty" id="inputmenu" value="0" class="inputmenu" />
+      <div class="incMenu button">+</div>
+    </div>
+
+    <div class="box">
+      <label for="name">Menu C:</label>
+      <div class="decMenu button">-</div>
+      <input type="text" name="qty" id="inputmenu" value="0" class="inputmenu" />
+      <div class="incMenu button">+</div>
+    </div>
+
+    <div class="box">
+      <label>Total</label>
+      <input type="text" id="total" value="0" disabled="" />
+    </div>
+
+    <script>
+      var incrementButtonGuest = document.getElementsByClassName("incguest");
+      var decrementButtonGuest = document.getElementsByClassName("decguest");
+      //console.log(incrementButton);
+      //console.log(decrementButton);
+      for (var i = 0; i < incrementButtonGuest.length; i++) {
+        var button = incrementButtonGuest[i];
+        button.addEventListener("click", function (event) {
+          var buttonClicked = event.target;
+          //console.log(buttonClicked)
+          var input = buttonClicked.parentElement.children[2];
+          //console.log(input);
+          let guest = document.getElementById("guest-input").value;
+          console.log(guest);
+          var inputValue = input.value;
+          console.log(parseInt(inputValue) >= parseInt(guest));
+          var Guest = parseInt(inputValue) + 1;
+          //console.log(Guest);
+          input.value = Guest;
+
+          getTotal();
+        });
+      }
+      var incrementButtonMenu = document.getElementsByClassName("incMenu");
+      var decrementButtonMenu = document.getElementsByClassName("decMenu");
+      //console.log(incrementButton);
+      //console.log(decrementButton);
+      for (var i = 0; i < incrementButtonMenu.length; i++) {
+        var button = incrementButtonMenu[i];
+        button.addEventListener("click", function (event) {
+          var buttonClicked = event.target;
+          //console.log(buttonClicked)
+          var input = buttonClicked.parentElement.children[2];
+          //console.log(input);
+          let inputmenu = document.getElementById("inputmenu").value;
+          let guest = document.getElementById("guest-input").value;
+          let MaxInput = document.getElementById("total").value;
+          console.log(inputmenu);
+          var inputValueMenu = input.value;
+          console.log(parseInt(MaxInput) < parseInt(guest));
+          if (parseInt(MaxInput) < parseInt(guest)) {
+            var newValueMenu = parseInt(inputValueMenu) + 1;
+            //console.log(newValueMenu);
+            input.value = newValueMenu;
+
+            getTotal();
+          }
+        });
+      }
+      for (var i = 0; i < decrementButtonGuest.length; i++) {
+        var button = decrementButtonGuest[i];
+        button.addEventListener("click", function (event) {
+          var buttonClicked = event.target;
+          //console.log(buttonClicked)
+          var input = buttonClicked.parentElement.children[2];
+          //console.log(input);
+          var inputValue = input.value;
+          var newValue = parseInt(inputValue) - 1;
+          //console.log(newValue);
+          if (newValue >= 0) {
+            input.value = newValue;
+            //console.log(newValue);
+          } else {
+            input.value = 0;
+            //alert('QTY CAN NOT LESS THAN SERO');
+          }
+        });
+      }
+      for (var i = 0; i < decrementButtonMenu.length; i++) {
+        var button = decrementButtonMenu[i];
+        button.addEventListener("click", function (event) {
+          var buttonClicked = event.target;
+          //console.log(buttonClicked)
+          var input = buttonClicked.parentElement.children[2];
+          //console.log(input);
+
+          let inputValueMenu = input.value;
+          let newValueMenu = parseInt(inputValueMenu) - 1;
+          console.log(parseInt(newValueMenu));
+          //console.log(newValueMenu);
+          if (parseInt(newValueMenu) >= 0) {
+            input.value = newValueMenu;
+            //console.log(newValue);
+          } else {
+            input.value = 0;
+            //alert('QTY CAN NOT LESS THAN SERO');
+          }
+          getTotal();
+        });
+      }
+
+      function getTotal() {
+        var arr = document.querySelectorAll(".inputmenu");
+        var total = 0;
+        for (var i = 0; i < arr.length; i++) {
+          if (parseInt(arr[i].value)) {
+            total += parseInt(arr[i].value);
+          }
+        }
+
+        document.getElementById("total").value = total;
+      }
+    </script>
+  </body>
+</html>
+
+<!-- // ambil value dari input guest // ambil value total // setting maximal input menu sesuai (value input guest - value total) G: 5 A:2 B:0
+(5-4 = 1) C:2 Total: 4 -->
