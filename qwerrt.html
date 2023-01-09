@@ -1,0 +1,1596 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="PageMenu.css" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script src="index.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+  (function () {
+    emailjs.init("4iAuC6Vpi0n3DBYvx");
+  })();
+</script>
+
+    <title>Villa Bugis</title>
+  </head>
+  <body class="p-3 bg-light " >
+    <h1 class="Intro">Order Breakfast</h1>
+    <section >
+      <div class="box_pembungkus shadow p-3 mb-5 bg-body rounded container">
+        <div class="container">
+          <div class="row align-items-start container">
+            <div class="col container">
+            <div class="row mb-4">
+              <label for="colFormLabelSm" class="control-label col-sm-auto col-form-label col-form-label-md ">Villa Name</label>
+              <div class="col-sm-auto">
+                <select type="text" class="form-select form-select-sm m-1" id="VillaName" placeholder="col-form-label-auto">
+                  <option selected>Please Choose</option>
+                  <option value="Villa Alam">Villa Alam</option>
+                  <option value="Villa Alore">Villa Alore</option>
+                  <option value="Villa An Tan">Villa An Tan</option>
+                  <option value="Villa Arjuna">Villa Arjuna</option>
+                  <option value="Villa Cemara">Villa Cemara</option>
+                  <option value="Villa Cinta">Villa Cinta</option>
+                  <option value="Villa Damai">Villa Damai</option>
+                  <option value="Villa Darma">Villa Darma</option>
+                  <option value="Villa Gading">Villa Gading</option>
+                  <option value="Villa Gembira">Villa Gembira</option>
+                  <option value="Villa Ginger">Villa Ginger</option>
+                  <option value="Villa Intan">Villa Intan</option>
+                  <option value="Villa Jaclan">Villa Jaclan</option>
+                  <option value="Villa Kebun">Villa Kebun</option>
+                  <option value="Villa Krisna">Villa Krisna</option>
+                  <option value="Villa Mahkota">Villa Mahkota</option>
+                  <option value="Villa Mango">Villa Mango</option>
+                  <option value="Villa Nakula">Villa Nakula</option>
+                  <option value="Villa Olive">Villa Olive</option>
+                  <option value="Villa Rama">Villa Rama</option>
+                  <option value="Villa Rasi">Villa Rasi</option>
+                  <option value="Villa Santai">Villa Santai</option>
+                  <option value="Villa Santi">Villa Santi</option>
+                  <option value="Villa Saphir">Villa Saphir</option>
+                  <option value="Villa Sayang">Villa Sayang</option>
+                  <option value="Villa Tresna">Villa Tresna</option>
+                  <option value="Villa Umah Kupu Kupu 2">Villa Umah Kupu Kupu 2</option>
+                  <option value="Villa Vara">Villa Vara</option>
+                </select>
+              </div>
+            </div>
+            <div class="row mb-4">
+              <label for="colFormLabelSm" class="label_date control-label col-sm-auto col-form-label col-form-label-auto"
+                >Date&Time 
+                <br>
+                To serve</label>
+              <div class="col-sm-auto">
+                <input type="datetime-local" class=" form-select form-select-sm" id="DateTime" placeholder="col-form-label-sm"></input>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div></div>
+            <div class="row mb-4">
+              <label for="colFormLabelSm" class=" p-1 label_nama control-label col-sm-auto col-form-label col-form-label-auto"
+              >Your Name</label>
+              <div class="col-sm-auto">
+                <input type="text" class=" form-control form-control-sm m-2" id="GuestName" placeholder="Enter Your Name"></input>
+              </div>
+            </div>
+            <div class="row mb-4">
+              <label for="colFormLabelSm" class=" p-2 label_email control-label col-sm-auto col-form-label col-form-label-auto"
+              >Your Email</label>
+              <div class="col-sm-auto">
+                <input type="text" class=" form-control form-control-sm m-2" id="GuestEmail" placeholder="Enter Your Email"></input>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="container">
+              <div class="row mb-4  ">
+                <label for="name" class=" p-2 label_email control-label col-sm-auto col-form-label col-form-label-auto">Total Guest</label>
+                <div class="col-sm-auto box">
+                  <div class="decguest button">-</div>
+                  <input  disabled type="number" name="qty" id="guest-input" value="0" class="guest-input" />
+                  <div class="incguest button">+</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section >
+    <section>
+      <div class="container ">
+        <h1  class="Tulisan ">Please select your choice of Breakfast – you can see pictures at: 
+          <br/>
+          <a href="https://villabugis.com/complimentary-breakfast" target="_blank" class="linkmenu">
+            https://villabugis.com/complimentary-breakfast
+          </a>
+          <br/>
+        Indicate total number of people at the start of each main category of either Bugis, Indonesian or Continental Breakfast and then the breakdown Eg 4 x Bugis Breakfast - consisting of 3 Fried Eggs and 1 Scrambled eggs – and number of side or optional dishes – eg 4 x bacon and 4 x Sausages – and then also desired drinks eg 4 x coffee and any fruit if desired.</h1>
+    </div>
+  </section>
+  <section >
+    <div class="box_pembungkus shadow mb-5 bg-body rounded container">
+      <div class="container"> 
+        <div class=" row-md-auto">
+          <div class="col-md-auto">
+            <div class="box2">
+              <button onclick="slideUp('animasi1')" class="decMenu btn btn-outline-secondary button" type="button">-</button>
+                <input disabled  type="number" name="qty" id="BugisBreakfast" value="0" class="inputmenu" />
+              <button onclick="slideDown('animasi1')" class="incMenu btn btn-outline-secondary button"  type="button">+</button>
+            <div class="container ">  
+          <div class="col-md-auto">
+        <div class=" container PembungkusMenu">
+          <h5 class="" >Bugis Breakfast</h5>
+            <p class="">Included with the Bugis Breakfast - your choice of eggs (all orders come with toast, fresh fruit and juices and hot drinks - please add in relevant section below):</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="animasi1">
+      <div class="row justify-content-end container  "  >
+        <div class="col-sm-auto ">
+        <div class="container scrambledEggs m-2">
+          <div class="col-sm-auto box3">
+            <div class="input-group input-group-sm">
+              <button class="decEggsMenu btn btn-outline-secondary button" type="button">-</button>
+              <div class="InputNamaMenu input-group-text">Scrambled eggs</div>
+              <input type="text" name="qty" id="Scrambled_eggs" value="0" class="inputEggsMenu" />
+              <button class="incEggsMenu btn btn-outline-secondary button" type="button">+</button>
+            </div>
+          </div>
+        </div>
+        <div class="container scrambledEggs m-2">
+          <div class="col-md-auto box3">
+            <div class="input-group input-group-sm">
+              <button class="decEggsMenu btn btn-outline-secondary button">-</button>
+              <div class=" InputNamaMenu input-group-text">Fried eggs</div>
+              <input type="text" name="qty" id="Fried_eggs" value="0" class="inputEggsMenu" />
+              <button class="incEggsMenu btn btn-outline-secondary button">+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-auto ">
+        <div class="container scrambledEggs m-2">
+          <div class="col-sm-auto box3">
+            <div class="input-group input-group-sm">
+              <button class="decEggsMenu btn btn-outline-secondary button">-</button>
+                <div class="InputNamaMenu input-group-text">Boiled eggs</div>
+                <input type="text" name="qty" id="Boiled_eggs" value="0" class="inputEggsMenu" />
+                <button class="incEggsMenu btn btn-outline-secondary button">+</button>
+              </div>
+            </div>
+          </div>
+        <div class="container scrambledEggs m-2">
+          <div class="col-sm-auto box3">
+            <div class="input-group input-group-sm">
+                <button class="decEggsMenu btn btn-outline-secondary button">-</button>
+                <div class="InputNamaMenu input-group-text">Poached eggs</div>
+                <input type="text" name="qty" id="Poached_eggs" value="0" class="inputEggsMenu" />
+                <button class="incEggsMenu btn btn-outline-secondary button">+</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      <div class="col-sm-auto ">
+        <div class="container scrambledEggs m-2">
+          <div class="col-sm-auto box3">
+            <div class="input-group input-group-sm">
+              <button class="decEggsMenu btn btn-outline-secondary button">-</button>
+              <div class="InputNamaMenu input-group-text"> Omelette</div>
+              <input type="text" name="qty" id="Omelette" value="0" class="inputEggsMenu" />
+              <button class="incEggsMenu btn btn-outline-secondary button">+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-6">
+        <p class="fontsize"> Served with optional 2 x side dishes per order of:</p>
+      </div>
+      <div class="col-3">
+      </div>
+    </div>
+    <div class="row justify-content-end container  " >
+      <div class="col-sm-auto ">
+        <div class="container scrambledEggs m-2">
+          <div class="col-sm-auto box3">
+            <div class="input-group input-group-sm">
+              <button class="decSideDishes btn btn-outline-secondary button" type="button">-</button>
+              <div class="InputNamaMenu input-group-text">Bacon</div>
+              <input type="text" name="qty" id="Bacon" value="0" class="inputSideDishes" />
+              <button class="incSideDishes btn btn-outline-secondary button" type="button">+</button>
+            </div>
+          </div>
+        </div>
+        <div class="container scrambledEggs m-2">
+          <div class="col-md-auto box3">
+            <div class="input-group input-group-sm">
+              <button class="decSideDishes btn btn-outline-secondary button">-</button>
+              <div class=" InputNamaMenu input-group-text">Ham</div>
+              <input type="text" name="qty" id="Ham" value="0" class="inputSideDishes" />
+              <button class="incSideDishes btn btn-outline-secondary button">+</button>
+            </div>
+          </div>
+        </div>
+        <div class="container scrambledEggs m-2">
+          <div class="col-md-auto box3">
+            <div class="input-group input-group-sm">
+              <button class="decSideDishes btn btn-outline-secondary button">-</button>
+              <div class=" InputNamaMenu input-group-text">Sausages</div>
+              <input type="text" name="qty" id="Sausages" value="0" class="inputSideDishes" />
+              <button class="incSideDishes btn btn-outline-secondary button">+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-auto ">
+        <div class="container scrambledEggs m-2">
+          <div class="col-sm-auto box3">
+            <div class="input-group input-group-sm">
+                <button class="decSideDishes btn btn-outline-secondary button">-</button>
+                <div class="InputNamaMenu input-group-text">Potatoes</div>
+                <input type="text" name="qty" id="Potatoes" value="0" class="inputSideDishes" />
+                <button class="incSideDishes btn btn-outline-secondary button">+</button>
+              </div>
+            </div>
+          </div>
+          <div class="container scrambledEggs m-2">
+          <div class="col-sm-auto box3">
+            <div class="input-group input-group-sm">
+              <button class="decSideDishes btn btn-outline-secondary button">-</button>
+                <div class="InputNamaMenu input-group-text">Tomatoes</div>
+                <input type="text" name="qty" id="Tomatoes" value="0" class="inputSideDishes" />
+                <button class="incSideDishes btn btn-outline-secondary button">+</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      <div class="col-sm-auto ">
+        <div class="container scrambledEggs m-2">
+          <div class="col-sm-auto box3">
+            <div class="input-group input-group-sm">
+              <button class="decSideDishes btn btn-outline-secondary button">-</button>
+              <div class="InputNamaMenu input-group-text">Plain Pancakes</div>
+              <input type="text" name="qty" id="Plain_Pancakes" value="0" class="inputSideDishes" />
+              <button class="incSideDishes btn btn-outline-secondary button">+</button>
+            </div>
+          </div>
+        </div>
+        <div class="container scrambledEggs m-2">
+          <div class="col-sm-auto box3">
+            <div class="input-group input-group-sm">
+              <button class="decSideDishes btn btn-outline-secondary button">-</button>
+              <div class="InputNamaMenu input-group-text">Banana Pancakes</div>
+              <input type="text" name="qty" id="Banana_Pancakes" value="0" class="inputSideDishes" />
+              <button class="incSideDishes btn btn-outline-secondary button">+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- menu indonesia -->
+<section>
+  <div class="box_pembungkus shadow p-3 mb-5 bg-body rounded container">
+    <div class="container">
+      <div class="row">
+        <div class="col align-self-start">
+          <div class="col-sm-auto box2">
+            <button class="decMenu btn btn-outline-secondary button " type="button">-</button>
+            <input disabled type="number" name="qty" id="IndonesianBreakfast" value="0" class="inputmenu" />
+            <button class="incMenu btn btn-outline-secondary button" onclick="slideDown2('animasi2')" type="button">+</button>
+                <div class=" container PembungkusMenu">
+                  <h5 class="">Indonesian Breakfast</h5>
+                  <p class="">Served with fresh fruit and juices and hot drinks - please add in relevant section below:</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-start container BatasIndonesian " id="animasi2">
+            <div class="col-1"></div>
+            <div class="col-sm-auto ">
+              <div class="container scrambledEggs m-2">
+                <div class="col-sm-auto box3">
+                  <div class="input-group input-group-sm">
+                    <button class="decFriedMenu btn btn-outline-secondary button" type="button">-</button>
+                    <div class="InputNamaMenu input-group-text">Fried Rice</div>
+                    <input type="text" name="qty" id="Fried Rice" value="0" class="inputFriedMenu" />
+                    <button class="incFriedMenu btn btn-outline-secondary button" type="button">+</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-auto">
+              <div class="container scrambledEggs m-2">
+                <div class="col-sm-auto box3">
+                  <div class="input-group input-group-sm">
+                      <button class="decFriedMenu btn btn-outline-secondary button">-</button>
+                      <div class="InputNamaMenu input-group-text">Fried Noodles</div>
+                      <input type="text" name="qty" id="Fried Noodles" value="0" class="inputFriedMenu" />
+                      <button class="incFriedMenu btn btn-outline-secondary button">+</button>
+                      </div>
+                  </div>
+                </div>
+          </div>
+        </div> 
+        </div>
+      </div>    
+    </div>
+     
+    </section>
+
+    <section>
+    <div class="box_pembungkus shadow p-3 mb-5 bg-body rounded container">
+        <div class="container">
+          <div class="row">
+            <div class="col align-self-start">
+              <div class="col-sm-auto box2">
+                <button class="decMenu btn btn-outline-secondary button" type="button">-</button>
+                  <input disabled type="number" name="qty" id="ContinentalBreakfast" value="0" class="inputmenu" />
+                <button class="incMenu btn btn-outline-secondary button" onclick="slideDown3('animasi3')" type="button">+</button>
+                <div class=" container PembungkusMenu">
+                  <h5 class="">Continental Breakfast</h5>
+                  <p class="">Served with fresh fruit and juices and hot drinks - please add in relevant section below:</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-end container  " id="animasi3">
+            <div class="col-sm-auto ">
+              <div class="container scrambledEggs m-2">
+                <div class="col-sm-auto box3">
+                  <div class="input-group input-group-sm">
+                    <button class="decBakeryMenu btn btn-outline-secondary button" type="button">-</button>
+                    <div class="InputNamaMenu input-group-text">Toast</div>
+                    <input type="text" name="qty" id="Toast" value="0" class="inputBakeryMenu" />
+                    <button class="incBakeryMenu btn btn-outline-secondary button" type="button">+</button>
+                  </div>
+                </div>
+              </div>
+              <div class="container scrambledEggs m-2">
+                <div class="col-md-auto box3">
+                  <div class="input-group input-group-sm">
+                    <button class="decBakeryMenu btn btn-outline-secondary button">-</button>
+                    <div class=" InputNamaMenu input-group-text">Croissant</div>
+                    <input type="text" name="qty" id="Croissant" value="0" class="inputBakeryMenu" />
+                    <button class="incBakeryMenu btn btn-outline-secondary button">+</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-auto ">
+              <div class="container scrambledEggs m-2">
+                <div class="col-sm-auto box3">
+                  <div class="input-group input-group-sm">
+                      <button class="decBakeryMenu btn btn-outline-secondary button">-</button>
+                      <div class="InputNamaMenu input-group-text">Danish Pastries</div>
+                      <input type="text" name="qty" id="Danish Pastries" value="0" class="inputBakeryMenu" />
+                      <button class="incBakeryMenu btn btn-outline-secondary button">+</button>
+                      </div>
+                  </div>
+                </div>
+              <div class="container scrambledEggs m-2">
+                <div class="col-sm-auto box3">
+                  <div class="input-group input-group-sm">
+                      <button class="decBakeryMenu btn btn-outline-secondary button">-</button>
+                      <div class="InputNamaMenu input-group-text">Muffins</div>
+                      <input type="text" name="qty" id="Muffins" value="0" class="inputBakeryMenu" />
+                      <button class="incBakeryMenu btn btn-outline-secondary button">+</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <div class="col-sm-auto ">
+              <div class="container scrambledEggs m-2">
+                <div class="col-sm-auto box3">
+                  <div class="input-group input-group-sm">
+                    <button class="decBakeryMenu btn btn-outline-secondary button">-</button>
+                    <div class="InputNamaMenu input-group-text"> Plain Pancakes </div>
+                    <input type="text" name="qty" id="Plain Pancakes " value="0" class="inputBakeryMenu" />
+                    <button class="incBakeryMenu btn btn-outline-secondary button">+</button>
+                  </div>
+                </div>
+              </div>
+              <div class="container scrambledEggs m-2">
+                <div class="col-sm-auto box3">
+                  <div class="input-group input-group-sm">
+                    <button class="decBakeryMenu btn btn-outline-secondary button">-</button>
+                    <div class="InputNamaMenu input-group-text">Banana Pancakes </div>
+                    <input type="text" name="qty" id="Banana Pancakes " value="0" class="inputBakeryMenu" />
+                    <button class="incBakeryMenu btn btn-outline-secondary button">+</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+
+    <section>
+    <div class="box_pembungkus shadow p-3 mb-5 bg-body rounded container">
+        <div class="container">
+          <div class="row justify-content-start container ">
+            <dir class="col-1 m-1"></dir>
+            <div class="col align-self-start">
+              <div class="col-sm-auto box2">
+                <div class=" container PembungkusMenu">
+                  <h5 class="">Fresh Fruit Sliced :</h5>
+                  <p class="">Selection of maximum 3 x fruit per breakfast order eg if 4 breakfasts, total should be 12 below</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-end container ">
+            <div class="col-sm-auto ">
+              <div class="container scrambledEggs m-2">
+                <div class="col-sm-auto box3">
+                  <div class="input-group input-group-sm">
+                    <button class="decFruit btn btn-outline-secondary button" type="button">-</button>
+                    <div class="InputNamaMenu input-group-text">Pineapple</div>
+                    <input type="text" name="qty" id="Pineapple" value="0" class="inputFruit" />
+                    <button class="incFruit btn btn-outline-secondary button" type="button">+</button>
+                  </div>
+                </div>
+              </div>
+              <div class="container scrambledEggs m-2">
+                <div class="col-md-auto box3">
+                  <div class="input-group input-group-sm">
+                    <button class="decFruit btn btn-outline-secondary button">-</button>
+                    <div class=" InputNamaMenu input-group-text">Honeydew Melon</div>
+                    <input type="text" name="qty" id="Honeydew Melon" value="0" class="inputFruit" />
+                    <button class="incFruit btn btn-outline-secondary button">+</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-auto ">
+              <div class="container scrambledEggs m-2">
+                <div class="col-sm-auto box3">
+                  <div class="input-group input-group-sm">
+                      <button class="decFruit btn btn-outline-secondary button">-</button>
+                      <div class="InputNamaMenu input-group-text">Water Melon</div>
+                      <input type="text" name="qty" id="Water Melon" value="0" class="inputFruit" />
+                      <button class="incFruit btn btn-outline-secondary button">+</button>
+                      </div>
+                  </div>
+                </div>
+              <div class="container scrambledEggs m-2">
+                <div class="col-sm-auto box3">
+                  <div class="input-group input-group-sm">
+                      <button class="decFruit btn btn-outline-secondary button">-</button>
+                      <div class="InputNamaMenu input-group-text">Pepaya</div>
+                      <input type="text" name="qty" id="Pepaya" value="0" class="inputFruit" />
+                      <button class="incFruit btn btn-outline-secondary button">+</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <div class="col-sm-auto ">
+              <div class="container scrambledEggs m-2">
+                <div class="col-sm-auto box3">
+                  <div class="input-group input-group-sm">
+                    <button class="decFruit btn btn-outline-secondary button">-</button>
+                    <div class="InputNamaMenu input-group-text"> Seasonal Fruit </div>
+                    <input type="text" name="qty" id=" Seasonal Fruit " value="0" class="inputFruit" />
+                    <button class="incFruit btn btn-outline-secondary button">+</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+
+    <section>
+      <div class="box_pembungkus shadow p-3 mb-5 bg-body rounded container">
+        <div class="container">
+          <div class="row container">
+            <div class="col-1 m-1"></div>
+            <div class="col align-self-start">
+              <div class="col-sm-auto box2">
+                <div class=" container PembungkusMenu">
+                  <h5 class="">Hot drinks :</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-start container BatasIndonesian ">
+            <div class="col-1"></div>
+            <div class="col-sm-auto ">
+              <div class="container scrambledEggs m-1 ">
+                <div class="col-sm-auto box3">
+                  <div class="input-group input-group-sm">
+                    <button class="decHotDrinks btn btn-outline-secondary button" type="button">-</button>
+                      <div class="InputNamaMenu input-group-text">Coffee</div>
+                      <input type="text" name="qty" id="Coffee" value="0" class="inputHotDrinks" />
+                      <button class="incHotDrinks btn btn-outline-secondary button" type="button">+</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-auto">
+              <div class="container scrambledEggs m-1 ">
+                <div class="col-sm-auto box3">
+                  <div class="input-group input-group-sm">
+                      <button class="decHotDrinks btn btn-outline-secondary button">-</button>
+                      <div class="InputNamaMenu input-group-text">Tea</div>
+                      <input type="text" name="qty" id="Tea" value="0" class="inputHotDrinks" />
+                      <button class="incHotDrinks btn btn-outline-secondary button">+</button>
+                      </div>
+                  </div>
+                </div>
+          </div>
+        </div> 
+        </div>
+      </div>    
+    </div>
+     
+    </section>
+
+    <section>
+      <div class="box_pembungkus shadow p-3 mb-5 bg-body rounded container">
+          <div class="container">
+            <div class="row justify-content-start container ">
+              <dir class="col-1 m-1"></dir>
+              <div class="col align-self-start">
+                <div class="col-sm-auto box2">
+                  <div class=" container PembungkusMenu">
+                    <h5 class="">Fruit juices :</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-end container ">
+              <div class="col-sm-auto ">
+                <div class="container scrambledEggs m-2">
+                  <div class="col-sm-auto box3">
+                    <div class="input-group input-group-sm">
+                      <button class="decFruitJuices btn btn-outline-secondary button" type="button">-</button>
+                      <div class="InputNamaMenu input-group-text">Orange</div>
+                      <input type="text" name="qty" id="Orange" value="0" class="inputFruitJuices" />
+                      <button class="incFruitJuices btn btn-outline-secondary button" type="button">+</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="container scrambledEggs m-2">
+                  <div class="col-md-auto box3">
+                    <div class="input-group input-group-sm">
+                      <button class="decFruitJuices btn btn-outline-secondary button">-</button>
+                      <div class=" InputNamaMenu input-group-text">Pineapple</div>
+                      <input type="text" name="qty" id="Pineapple" value="0" class="inputFruitJuices" />
+                      <button class="incFruitJuices btn btn-outline-secondary button">+</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-auto ">
+                <div class="container scrambledEggs m-2">
+                  <div class="col-sm-auto box3">
+                    <div class="input-group input-group-sm">
+                        <button class="decFruitJuices btn btn-outline-secondary button">-</button>
+                        <div class="InputNamaMenu input-group-text">Honeydew Melon</div>
+                        <input type="text" name="qty" id="Honeydew Melon" value="0" class="inputFruitJuices" />
+                        <button class="incFruitJuices btn btn-outline-secondary button">+</button>
+                        </div>
+                    </div>
+                  </div>
+                <div class="container scrambledEggs m-2">
+                  <div class="col-sm-auto box3">
+                    <div class="input-group input-group-sm">
+                        <button class="decFruitJuices btn btn-outline-secondary button">-</button>
+                        <div class="InputNamaMenu input-group-text">Water Melon</div>
+                        <input type="text" name="qty" id="Water Melon" value="0" class="inputFruitJuices" />
+                        <button class="incFruitJuices btn btn-outline-secondary button">+</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              <div class="col-sm-auto ">
+                <div class="container scrambledEggs m-2">
+                  <div class="col-sm-auto box3">
+                    <div class="input-group input-group-sm">
+                        <button class="decFruitJuices btn btn-outline-secondary button">-</button>
+                        <div class="InputNamaMenu input-group-text">Pepaya</div>
+                        <input type="text" name="qty" id="Pepaya" value="0" class="inputFruitJuices" />
+                        <button class="incFruitJuices btn btn-outline-secondary button">+</button>
+                      </div>
+                    </div>
+                  </div>
+              <div class="col-sm-auto ">
+                <div class="container scrambledEggs m-2">
+                  <div class="col-sm-auto box3">
+                    <div class="input-group input-group-sm">
+                      <button class="decFruitJuices btn btn-outline-secondary button">-</button>
+                      <div class="InputNamaMenu input-group-text"> Seasonal Fruit </div>
+                      <input type="text" name="qty" id=" Seasonal Fruit " value="0" class="inputFruitJuices" />
+                      <button class="incFruitJuices btn btn-outline-secondary button">+</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </section>
+
+    <section>
+      <div class="box_pembungkus shadow p-3 mb-5 bg-body rounded container">
+          <div class="container">
+            <div class="row justify-content-start container ">
+              <dir class="col-1 m-1"></dir>
+              <div class="col align-self-start">
+                <div class="col-sm-auto box2">
+                  <div class=" container PembungkusMenu">
+                    <h5 class="">Additional Items</h5>
+                    <p class="mb-2" >Extra charge apply</p>
+                    <div class="row">
+                      <p class="mb-1 col-sm-auto" >BakeryItems:</p>
+                      <p class="mb-1 col-1 TagHarga" >12K/Pcs</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-end container ">
+              <div class="col-sm-auto ">
+                <div class="container scrambledEggs m-2 mt-0">
+                  <div class="col-sm-auto box3">
+                    <div class="input-group input-group-sm">
+                      <button class="decAdditionalItems btn btn-outline-secondary button" type="button">-</button>
+                      <div class="InputNamaMenu input-group-text">Croissant</div>
+                      <input type="text" name="qty" id="Croissant" value="0" class="inputAdditionalItems" />
+                      <button class="incAdditionalItems btn btn-outline-secondary button" type="button">+</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-auto ">
+                <div class="container scrambledEggs m-2 mt-0 " >
+                  <div class="col-sm-auto box3">
+                    <div class="input-group input-group-sm">
+                        <button class="decAdditionalItems btn btn-outline-secondary button">-</button>
+                        <div class="InputNamaMenu input-group-text">Danish</div>
+                        <input type="text" name="qty" id="Danish" value="0" class="inputAdditionalItems" />
+                        <button class="incAdditionalItems btn btn-outline-secondary button">+</button>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              <div class="col-sm-auto ">
+                <div class="container scrambledEggs m-2 mt-0">
+                  <div class="col-sm-auto box3">
+                    <div class="input-group input-group-sm">
+                      <button class="decAdditionalItems btn btn-outline-secondary button">-</button>
+                      <div class="InputNamaMenu input-group-text"> Muffins </div>
+                      <input type="text" name="qty" id=" Muffins " value="0" class="inputAdditionalItems" />
+                      <button class="incAdditionalItems btn btn-outline-secondary button">+</button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="row justify-content-start container ">
+            <dir class="col-1 m-1"></dir>
+            <div class="col align-self-start">
+              <div class="col-sm-auto box2">
+                <div class=" container PembungkusMenu">
+                  <div class="row">
+                    <p class="mb-1 col-sm-auto" >Cereals & Milk:</p>
+                    <p class="mb-1 col-1 TagHarga ml-0" >22.5K/Pcs</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-end container ">
+            <div class="col-sm-auto ">
+              <div class="container scrambledEggs m-2 mt-0">
+                <div class="col-sm-auto box3">
+                  <div class="input-group input-group-sm">
+                    <button class="decAdditionalItems btn btn-outline-secondary button" type="button">-</button>
+                    <div class="InputNamaMenu input-group-text">Mixed muesli</div>
+                    <input type="text" name="qty" id="Mixed muesli" value="0" class="inputAdditionalItems" />
+                    <button class="incAdditionalItems btn btn-outline-secondary button" type="button">+</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-auto ">
+              <div class="container scrambledEggs m-2 mt-0 " >
+                <div class="col-sm-auto box3">
+                  <div class="input-group input-group-sm">
+                      <button class="decAdditionalItems btn btn-outline-secondary button">-</button>
+                      <div class="InputNamaMenu input-group-text">Corn flakes</div>
+                      <input type="text" name="qty" id="Corn flakes" value="0" class="inputAdditionalItems" />
+                      <button class="incAdditionalItems btn btn-outline-secondary button">+</button>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            <div class="col-sm-auto ">
+              <div class="container scrambledEggs m-2 mt-0">
+                <div class="col-sm-auto box3">
+                  <div class="input-group input-group-sm">
+                    <button class="decAdditionalItems btn btn-outline-secondary button">-</button>
+                    <div class="InputNamaMenu input-group-text"> Weet Bix </div>
+                    <input type="text" name="qty" id=" Weet Bix " value="0" class="inputAdditionalItems" />
+                    <button class="incAdditionalItems btn btn-outline-secondary button">+</button>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+          <div class="row justify-content-start container ">
+            <dir class="col-1 m-1"></dir>
+            <div class="col align-self-start">
+              <div class="col-sm-auto box2">
+                <div class=" container PembungkusMenu">
+                  <div class="row">
+                    <p class="mb-1 col-sm-auto" >Yoghurt:</p>
+                    <p class="mb-1 col-1 TagHarga " >22.5K/Pcs</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-end container ">
+            <div class="col-sm-auto ">
+              <div class="container scrambledEggs m-2 mt-0">
+                <div class="col-sm-auto box3">
+                  <div class="input-group input-group-sm">
+                    <button class="decAdditionalItems btn btn-outline-secondary button" type="button">-</button>
+                    <div class="InputNamaMenu input-group-text">Plain Yoghurt</div>
+                    <input type="text" name="qty" id="Plain Yoghurt" value="0" class="inputAdditionalItems" />
+                    <button class="incAdditionalItems btn btn-outline-secondary button" type="button">+</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-auto ">
+              <div class="container scrambledEggs m-2 mt-0 " >
+                <div class="col-sm-auto box3">
+                  <div class="input-group input-group-sm">
+                      <button class="decAdditionalItems btn btn-outline-secondary button">-</button>
+                      <div class="InputNamaMenu input-group-text">Strawberry </div>
+                      <input type="text" name="qty" id="Strawberry Yoghurt" value="0" class="inputAdditionalItems" />
+                      <button class="incAdditionalItems btn btn-outline-secondary button">+</button>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            <div class="col-sm-auto ">
+              <div class="container scrambledEggs m-2 mt-0">
+                <div class="col-sm-auto box3">
+                  <div class="input-group input-group-sm">
+                    <button class="decAdditionalItems btn btn-outline-secondary button">-</button>
+                    <div class="InputNamaMenu input-group-text"> Raspberry  </div>
+                    <input type="text" name="qty" id=" Raspberry Yoghurt " value="0" class="inputAdditionalItems" />
+                    <button class="incAdditionalItems btn btn-outline-secondary button">+</button>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+          <div class="row justify-content-start container ">
+            <dir class="col-1 m-1"></dir>
+            <div class="col align-self-start">
+              <div class="col-sm-auto box2">
+                <div class=" container PembungkusMenu">
+                  <div class="row">
+                    <p class="mb-1 col-sm-auto" >Side Dishes:</p>
+                    <p class="mb-1 col-1 TagHarga " >12K/Pcs</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-end container ">
+            <div class="col-sm-auto ">
+              <div class="container scrambledEggs m-2 mt-0">
+                <div class="col-sm-auto box3">
+                  <div class="input-group input-group-sm">
+                    <button class="decAdditionalItems btn btn-outline-secondary button" type="button">-</button>
+                    <div class="InputNamaMenu input-group-text">Bacon</div>
+                    <input type="text" name="qty" id="Bacon" value="0" class="inputAdditionalItems" />
+                    <button class="incAdditionalItems btn btn-outline-secondary button" type="button">+</button>
+                  </div>
+                </div>
+                <div class="col-sm-auto box3">
+                  <div class="input-group input-group-sm mt-2">
+                    <button class="decAdditionalItems btn btn-outline-secondary button" type="button">-</button>
+                    <div class="InputNamaMenu input-group-text">Tomatoes</div>
+                    <input type="text" name="qty" id="Tomatoes" value="0" class="inputAdditionalItems" />
+                    <button class="incAdditionalItems btn btn-outline-secondary button" type="button">+</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-auto ">
+              <div class="container scrambledEggs m-2 mt-0 " >
+                <div class="col-sm-auto box3">
+                  <div class="input-group input-group-sm">
+                      <button class="decAdditionalItems btn btn-outline-secondary button">-</button>
+                      <div class="InputNamaMenu input-group-text">Ham</div>
+                      <input type="text" name="qty" id="Ham" value="0" class="inputAdditionalItems" />
+                      <button class="incAdditionalItems btn btn-outline-secondary button">+</button>
+                      </div>
+                  </div>
+                </div>
+              <div class="container scrambledEggs m-2 mt-0 " >
+                <div class="col-sm-auto box3">
+                  <div class="input-group input-group-sm">
+                      <button class="decAdditionalItems btn btn-outline-secondary button">-</button>
+                      <div class="InputNamaMenu input-group-text">Potatoes </div>
+                      <input type="text" name="qty" id="Potatoes" value="0" class="inputAdditionalItems" />
+                      <button class="incAdditionalItems btn btn-outline-secondary button">+</button>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            <div class="col-sm-auto ">
+              <div class="container scrambledEggs m-2 mt-0">
+                <div class="col-sm-auto box3">
+                  <div class="input-group input-group-sm">
+                    <button class="decAdditionalItems btn btn-outline-secondary button">-</button>
+                    <div class="InputNamaMenu input-group-text"> Sausages  </div>
+                    <input type="text" name="qty" id=" Sausages " value="0" class="inputAdditionalItems" />
+                    <button class="incAdditionalItems btn btn-outline-secondary button">+</button>
+                  </div>
+                </div>
+              </div>
+              <div class="container scrambledEggs m-2 mt-0">
+                <div class="col-sm-auto box3">
+                  <div class="input-group input-group-sm">
+                    <button class="decAdditionalItems btn btn-outline-secondary button">-</button>
+                    <div class="InputNamaMenu input-group-text"> Pancakes  </div>
+                    <input type="text" name="qty" id=" Pancakes " value="0" class="inputAdditionalItems" />
+                    <button class="incAdditionalItems btn btn-outline-secondary button">+</button>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+        </div>
+      </div>
+        
+      </section>
+
+      <section>
+
+        <div class="box_pembungkus shadow p-3 mb-5 bg-body rounded container">
+          <div class="container">
+            <label for="inputPassword5" class="form-label">Please advise any special food requirements or comments here:</label>
+            <div class="form-floating">
+              <textarea class="form-control warnabg" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 120px"></textarea>
+            </div>
+            <div class="container">
+              <button class="btn-success btn mt-2 " onclick="sendMaill()">submit</button>
+            </div>
+          </div>
+        </div>    
+      </section>
+
+    <section class="sembunyikan">
+      <div class="box_pembungkus shadow p-3 mb-5 bg-body rounded container ">
+        <div class="container">
+          <div class="row ">
+            <div class="col align-self-start container">
+              <div class="col-sm-auto box2 container">
+                <div class="box">
+                  <label>TotalOrder</label>
+                  <input type="text" id="total" value="0" disabled="" />
+                </div>
+                <div class="box">
+                  <label>Total Eggs</label>
+                  <input type="text" id="totalEggsMenu" value="0" disabled="" />
+                </div>
+                <div class="box">
+                  <label>Total SideDishes</label>
+                  <input type="text" id="totalSideDishes" value="0" disabled="" />
+                </div>
+                <div class="box">
+                  <label>Total FriedMenu</label>
+                  <input type="text" id="totalFriedMenu" value="0" disabled="" />
+                </div>
+                <div class="box">
+                  <label>Total BakeryMenu</label>
+                  <input type="text" id="totalBakeryMenu" value="0" disabled="" />
+                </div>
+                <div class="box">
+                  <label>Fresh Fruit Sliced</label>
+                  <input type="text" id="totalFreshFruit" value="0" disabled="" />
+                </div>
+                <div class="box">
+                  <label>Hot drinks</label>
+                  <input type="text" id="totalHotDrinks" value="0" disabled="" />
+                </div>
+                <div class="box">
+                  <label>Fruit juices</label>
+                  <input type="text" id="totalFruitJuices" value="0" disabled="" />
+                </div>
+                <div class="box">
+                  <label>Additional Items</label>
+                  <input type="text" id="totalAdditionalItems" value="0" disabled="" />
+                </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </section>
+    
+    
+  
+  <script>
+    // incremen untukk guest
+    var incrementButtonGuest = document.getElementsByClassName("incguest");
+    var decrementButtonGuest = document.getElementsByClassName("decguest");
+    //console.log(incrementButton);
+    //console.log(decrementButton);
+    for (var i = 0; i < incrementButtonGuest.length; i++) {
+      var button = incrementButtonGuest[i];
+      button.addEventListener("click", function (event) {
+        var buttonClicked = event.target;
+        //console.log(buttonClicked)
+        var input = buttonClicked.parentElement.children[1];
+        //console.log(input);
+        let guest = document.getElementById("guest-input").value;
+        console.log(guest);
+        var inputValue = input.value;
+        console.log(parseInt(inputValue) >= parseInt(guest));
+        var Guest = parseInt(inputValue) + 1;
+        //console.log(Guest);
+        input.value = Guest;
+
+        getTotal();
+      });
+    }
+    // dicremen Untuk Guest
+    for (var i = 0; i < decrementButtonGuest.length; i++) {
+      var button = decrementButtonGuest[i];
+      button.addEventListener("click", function (event) {
+        var buttonClicked = event.target;
+        //console.log(buttonClicked)
+        var input = buttonClicked.parentElement.children[1];
+        //console.log(input);
+        var inputValue = input.value;
+        var newValue = parseInt(inputValue) - 1;
+        //console.log(newValue);
+        if (newValue >= 0) {
+          input.value = newValue;
+          //console.log(newValue);
+        } else {
+          input.value = 0;
+          //alert('QTY CAN NOT LESS THAN SERO');
+        }
+      });
+    }
+
+     // Incremen untuk menu
+     var incrementButtonMenu = document.getElementsByClassName("incMenu");
+      var decrementButtonMenu = document.getElementsByClassName("decMenu");
+      //console.log(incrementButton);
+      //console.log(decrementButton);
+      for (var i = 0; i < incrementButtonMenu.length; i++) {
+        var button = incrementButtonMenu[i];
+        button.addEventListener("click", function (event) {
+          var buttonClicked = event.target;
+          //console.log(buttonClicked)
+          var input = buttonClicked.parentElement.children[1];
+          //console.log(input);
+          let inputmenu = document.getElementsByClassName("inputmenu").value;
+          let guest = document.getElementById("guest-input").value;
+          let MaxInput = document.getElementById("total").value;
+          console.log(inputmenu);
+          var inputValueMenu = input.value;
+          console.log(parseInt(MaxInput) < parseInt(guest));
+          if (parseInt(MaxInput) < parseInt(guest)) {
+            var newValueMenu = parseInt(inputValueMenu) + 1;
+            //console.log(newValueMenu);
+            input.value = newValueMenu;
+
+            getTotal();
+          }
+        });
+      }
+
+      // decrement menu
+      for (var i = 0; i < decrementButtonMenu.length; i++) {
+        var button = decrementButtonMenu[i];
+        button.addEventListener("click", function (event) {
+          var buttonClicked = event.target;
+          //console.log(buttonClicked)
+          var input = buttonClicked.parentElement.children[1];
+          //console.log(input);
+
+          let inputValueMenu = input.value;
+          let newValueMenu = parseInt(inputValueMenu) - 1;
+          console.log(parseInt(newValueMenu));
+          //console.log(newValueMenu);
+          if (parseInt(newValueMenu) >= 0) {
+            input.value = newValueMenu;
+            //console.log(newValue);
+          } else {
+            input.value = 0;
+            //alert('QTY CAN NOT LESS THAN SERO');
+          }
+          getTotal();
+        });
+      }
+
+      //  EggsMenu JavaScript
+      var incrementButtonSideMenu = document.getElementsByClassName("incEggsMenu");
+      var decrementButtonSideMenu = document.getElementsByClassName("decEggsMenu");
+      for (var i = 0; i < incrementButtonSideMenu.length; i++) {
+        var button = incrementButtonSideMenu[i];
+        button.addEventListener("click", function (event) {
+          var buttonClicked = event.target;
+          //console.log(buttonClicked)
+          var input = buttonClicked.parentElement.children[2];
+          //console.log(input);
+          let inputSidemenu = document.getElementsByClassName("inputEggsMenu").value;
+          let BuguisMenu = document.getElementById("BugisBreakfast").value;
+          let MaxInput = document.getElementById("total").value;
+          let MaxInputSide = document.getElementById("totalEggsMenu").value;
+          console.log(inputSidemenu);
+          let MaxInputEggs = parseInt(MaxInput)
+          var inputValueEggsMenu = input.value;
+          console.log(parseInt(MaxInputSide) < parseInt(BuguisMenu));
+          if (parseInt(MaxInputSide) < parseInt(BuguisMenu)) {
+            var newValueSideMenu = parseInt(inputValueEggsMenu) + 1;
+            //console.log(newValueMenu);
+            input.value = newValueSideMenu;
+
+            getTotalEggs();
+          }
+        });
+      }
+
+      for (var i = 0; i < decrementButtonSideMenu.length; i++) {
+        var button = decrementButtonSideMenu[i];
+        button.addEventListener("click", function (event) {
+          var buttonClicked = event.target;
+          //console.log(buttonClicked)
+          var input = buttonClicked.parentElement.children[2];
+          //console.log(input);
+
+          let inputValueSideMenu = input.value;
+          let newValueSideMenu = parseInt(inputValueSideMenu) - 1;
+          console.log(parseInt(newValueSideMenu));
+          //console.log(newValueMenu);
+          if (parseInt(newValueSideMenu) >= 0) {
+            input.value = newValueSideMenu;
+            //console.log(newValue);
+          } else {
+            input.value = 0;
+            //alert('QTY CAN NOT LESS THAN SERO');
+          }
+          getTotalEggs();
+        });
+      } 
+
+      //  Indonesian JavaScript
+      var incrementButtonFriedMenu = document.getElementsByClassName("incFriedMenu");
+      var decrementButtonFriedMenu = document.getElementsByClassName("decFriedMenu");
+      for (var i = 0; i < incrementButtonFriedMenu.length; i++) {
+        var button = incrementButtonFriedMenu[i];
+        button.addEventListener("click", function (event) {
+          var buttonClicked = event.target;
+          //console.log(buttonClicked)
+          var input = buttonClicked.parentElement.children[2];
+          //console.log(input);
+          let inputFriedMenu = document.getElementsByClassName("inputFriedMenu").value;
+          let IndoensianMenu = document.getElementById("IndonesianBreakfast").value;
+          let MaxInput = document.getElementById("totalFriedMenu").value;
+          let MaxInputFriedMenu = document.getElementById("totalFriedMenu").value;
+          console.log(inputFriedMenu);
+          let MaxInputFried = parseInt(MaxInput)
+          var inputValueFriedMenu = input.value;
+          console.log(parseInt(MaxInputFriedMenu) < parseInt(IndoensianMenu));
+          if (parseInt(MaxInputFriedMenu) < parseInt(IndoensianMenu)) {
+            var newValueFriedMenu = parseInt(inputValueFriedMenu) + 1;
+            //console.log(newValueMenu);
+            input.value = newValueFriedMenu;
+
+            getTotalFriedMenu();
+          }
+        });
+      }
+
+      for (var i = 0; i < decrementButtonFriedMenu.length; i++) {
+        var button = decrementButtonFriedMenu[i];
+        button.addEventListener("click", function (event) {
+          var buttonClicked = event.target;
+          //console.log(buttonClicked)
+          var input = buttonClicked.parentElement.children[2];
+          //console.log(input);
+
+          let inputValueFriedMenu = input.value;
+          let newValueFriedMenu = parseInt(inputValueFriedMenu) - 1;
+          console.log(parseInt(newValueFriedMenu));
+          //console.log(newValueMenu);
+          if (parseInt(newValueFriedMenu) >= 0) {
+            input.value = newValueFriedMenu;
+            //console.log(newValue);
+          } else {
+            input.value = 0;
+            //alert('QTY CAN NOT LESS THAN SERO');
+          }
+          getTotalFriedMenu();
+        });
+      } 
+     
+
+      //  SideDishes JavaScript
+      var incrementButtonSideDishes = document.getElementsByClassName("incSideDishes");
+      var decrementButtonSideDishes = document.getElementsByClassName("decSideDishes");
+      for (var i = 0; i < incrementButtonSideDishes.length; i++) {
+        var button = incrementButtonSideDishes[i];
+        button.addEventListener("click", function (event) {
+          var buttonClicked = event.target;
+          //console.log(buttonClicked)
+          var input = buttonClicked.parentElement.children[2];
+          //console.log(input);
+          let inputSidemenu = document.getElementsByClassName("inputSideDishes").value;
+          let guest = document.getElementById("guest-input").value;
+          let MaxInput = document.getElementById("BugisBreakfast").value;
+          let test = document.getElementsByClassName;
+          let MaxInputSide = document.getElementById("totalSideDishes").value;
+          console.log(inputSidemenu);
+          let MaxInputSideDishes = parseInt(MaxInput) + parseInt(MaxInput);
+          var inputValueSideDishes = input.value;
+          console.log(parseInt(MaxInputSide) < parseInt(MaxInputSideDishes));
+          if (parseInt(MaxInputSide) < parseInt(MaxInputSideDishes)) {
+            var newValueSideMenu = parseInt(inputValueSideDishes) + 1;
+            //console.log(newValueMenu);
+            input.value = newValueSideMenu;
+
+            getTotalSideDishes();
+          }
+        });
+      }
+
+      for (var i = 0; i < decrementButtonSideDishes.length; i++) {
+        var button = decrementButtonSideDishes[i];
+        button.addEventListener("click", function (event) {
+          var buttonClicked = event.target;
+          //console.log(buttonClicked)
+          var input = buttonClicked.parentElement.children[2];
+          //console.log(input);
+
+          let inputValueSideDishes = input.value;
+          let newValueSideDishes = parseInt(inputValueSideDishes) - 1;
+          console.log(parseInt(newValueSideDishes));
+          //console.log(newValueMenu);
+          if (parseInt(newValueSideDishes) >= 0) {
+            input.value = newValueSideDishes;
+            //console.log(newValue);
+          } else {
+            input.value = 0;
+            //alert('QTY CAN NOT LESS THAN SERO');
+          }
+          getTotalSideDishes();
+        });
+      } 
+
+
+     //  Continental Breakfast JavaScript
+
+     var incrementButtonBakeryMenu = document.getElementsByClassName("incBakeryMenu");
+      var decrementButtonBakeryMenu = document.getElementsByClassName("decBakeryMenu");
+      for (var i = 0; i < incrementButtonBakeryMenu.length; i++) {
+        var button = incrementButtonBakeryMenu[i];
+        button.addEventListener("click", function (event) {
+          var buttonClicked = event.target;
+          //console.log(buttonClicked)
+          var input = buttonClicked.parentElement.children[2];
+          //console.log(input);
+          let inputBakeryMenu = document.getElementsByClassName("inputBakeryMenu").value;
+          let ContinetalMenu = document.getElementById("ContinentalBreakfast").value;
+          let MaxInput = document.getElementById("totalBakeryMenu").value;
+          let MaxInputBakeryMenu = document.getElementById("totalBakeryMenu").value;
+          console.log(inputBakeryMenu);
+          let MaxInputFried = parseInt(MaxInput)
+          var inputValueBakeryMenu = input.value;
+          console.log(parseInt(MaxInputBakeryMenu) < parseInt(ContinetalMenu));
+          if (parseInt(MaxInputBakeryMenu) < parseInt(ContinetalMenu)) {
+            var newValueBakeryMenu = parseInt(inputValueBakeryMenu) + 1;
+            //console.log(newValueMenu);
+            input.value = newValueBakeryMenu;
+
+            getTotalBakeryMenu();
+          }
+        });
+      }
+
+      for (var i = 0; i < decrementButtonBakeryMenu.length; i++) {
+        var button = decrementButtonBakeryMenu[i];
+        button.addEventListener("click", function (event) {
+          var buttonClicked = event.target;
+          //console.log(buttonClicked)
+          var input = buttonClicked.parentElement.children[2];
+          //console.log(input);
+
+          let inputValueBakeryMenu = input.value;
+          let newValueBakeryMenu = parseInt(inputValueBakeryMenu) - 1;
+          console.log(parseInt(newValueBakeryMenu));
+          //console.log(newValueMenu);
+          if (parseInt(newValueBakeryMenu) >= 0) {
+            input.value = newValueBakeryMenu;
+            //console.log(newValue);
+          } else {
+            input.value = 0;
+            //alert('QTY CAN NOT LESS THAN SERO');
+          }
+          getTotalBakeryMenu();
+        });
+      } 
+
+     //  FereshFruit JavaScript
+
+     var incrementButtonFruit = document.getElementsByClassName("incFruit");
+      var decrementButtonFruit = document.getElementsByClassName("decFruit");
+      for (var i = 0; i < incrementButtonFruit.length; i++) {
+        var button = incrementButtonFruit[i];
+        button.addEventListener("click", function (event) {
+          var buttonClicked = event.target;
+          //console.log(buttonClicked)
+          var input = buttonClicked.parentElement.children[2];
+          //console.log(input);
+          let inputFruit = document.getElementsByClassName("inputFruit").value;
+          let TotalMenu = document.getElementById("total").value;
+          let MaxInputFruit = document.getElementById("totalFreshFruit").value;
+          console.log(inputFruit);
+          let MaxInputTotalMenu = parseInt(TotalMenu) + parseInt(TotalMenu) + parseInt(TotalMenu);
+          var inputValuefruit = input.value;
+          console.log(parseInt(MaxInputFruit) < parseInt(MaxInputTotalMenu));
+          if (parseInt(MaxInputFruit) < parseInt(MaxInputTotalMenu)) {
+            var newValueFruit = parseInt(inputValuefruit) + 1;
+            //console.log(newValueMenu);
+            input.value = newValueFruit;
+
+            getTotalFreshFruit();
+          }
+        });
+      }
+
+      for (var i = 0; i < decrementButtonFruit.length; i++) {
+        var button = decrementButtonFruit[i];
+        button.addEventListener("click", function (event) {
+          var buttonClicked = event.target;
+          //console.log(buttonClicked)
+          var input = buttonClicked.parentElement.children[2];
+          //console.log(input);
+
+          let inputValuefruit = input.value;
+          let newValueFruit = parseInt(inputValuefruit) - 1;
+          console.log(parseInt(newValueFruit));
+          //console.log(newValueMenu);
+          if (parseInt(newValueFruit) >= 0) {
+            input.value = newValueFruit;
+            //console.log(newValue);
+          } else {
+            input.value = 0;
+            //alert('QTY CAN NOT LESS THAN SERO');
+          }
+          getTotalFreshFruit();
+        });
+      } 
+
+     //  HotDrinks JavaScript
+
+     var incrementButtonHotDrinks = document.getElementsByClassName("incHotDrinks");
+      var decrementButtonHotDrinks = document.getElementsByClassName("decHotDrinks");
+      for (var i = 0; i < incrementButtonHotDrinks.length; i++) {
+        var button = incrementButtonHotDrinks[i];
+        button.addEventListener("click", function (event) {
+          var buttonClicked = event.target;
+          //console.log(buttonClicked)
+          var input = buttonClicked.parentElement.children[2];
+          //console.log(input);
+          let inputHotDrinks = document.getElementsByClassName("inputHotDrinks").value;
+          let MaxInputHotDrinks = document.getElementById("totalHotDrinks").value;
+          console.log(inputHotDrinks);
+          var inputValueHotDrinks = input.value;
+            var newValueHotdrinks = parseInt(inputValueHotDrinks) + 1;
+            //console.log(newValueMenu);
+            input.value = newValueHotdrinks;
+
+            getTotalHotDrinks();
+        });
+      }
+
+      for (var i = 0; i < decrementButtonHotDrinks.length; i++) {
+        var button = decrementButtonHotDrinks[i];
+        button.addEventListener("click", function (event) {
+          var buttonClicked = event.target;
+          //console.log(buttonClicked)
+          var input = buttonClicked.parentElement.children[2];
+          //console.log(input);
+
+          let inputValueHotDrinks = input.value;
+          let newValueHotdrinks = parseInt(inputValueHotDrinks) - 1;
+          console.log(parseInt(newValueHotdrinks));
+          //console.log(newValueMenu);
+          if (parseInt(newValueHotdrinks) >= 0) {
+            input.value = newValueHotdrinks;
+            //console.log(newValue);
+          } else {
+            input.value = 0;
+            //alert('QTY CAN NOT LESS THAN SERO');
+          }
+          getTotalHotDrinks();
+        });
+      } 
+
+       //  FruitJuices JavaScript
+
+     var incrementButtonFruitJuices = document.getElementsByClassName("incFruitJuices");
+      var decrementButtonFruitJuices = document.getElementsByClassName("decFruitJuices");
+      for (var i = 0; i < incrementButtonFruitJuices.length; i++) {
+        var button = incrementButtonFruitJuices[i];
+        button.addEventListener("click", function (event) {
+          var buttonClicked = event.target;
+          //console.log(buttonClicked)
+          var input = buttonClicked.parentElement.children[2];
+          //console.log(input);
+          let inputHotFruitJuices = document.getElementsByClassName("inputFruitJuices").value;
+          let MaxInputHotFruitJuices = document.getElementById("totalFruitJuices").value;
+          console.log(inputHotFruitJuices);
+          var inputValueFruitJuices = input.value;
+            var newValueFruitJuices = parseInt(inputValueFruitJuices) + 1;
+            //console.log(newValueMenu);
+            input.value = newValueFruitJuices;
+
+            getTotalHotDrinks();
+        });
+      }
+
+      for (var i = 0; i < decrementButtonFruitJuices.length; i++) {
+        var button = decrementButtonFruitJuices[i];
+        button.addEventListener("click", function (event) {
+          var buttonClicked = event.target;
+          //console.log(buttonClicked)
+          var input = buttonClicked.parentElement.children[2];
+          //console.log(input);
+
+          let inputValueFruitJuices = input.value;
+          let newValueFruitJuices = parseInt(inputValueFruitJuices) - 1;
+          console.log(parseInt(newValueFruitJuices));
+          //console.log(newValueMenu);
+          if (parseInt(newValueFruitJuices) >= 0) {
+            input.value = newValueFruitJuices;
+            //console.log(newValue);
+          } else {
+            input.value = 0;
+            //alert('QTY CAN NOT LESS THAN SERO');
+          }
+          getTotalHotDrinks();
+        });
+      } 
+
+       //  Addiotional Items JavaScript
+
+     var incrementButtonadditionalItems = document.getElementsByClassName("incAdditionalItems");
+      var decrementButtonAddtionalItems = document.getElementsByClassName("decAdditionalItems");
+      for (var i = 0; i < incrementButtonadditionalItems.length; i++) {
+        var button = incrementButtonadditionalItems[i];
+        button.addEventListener("click", function (event) {
+          var buttonClicked = event.target;
+          //console.log(buttonClicked)
+          var input = buttonClicked.parentElement.children[2];
+          //console.log(input);
+          let inputHotAdditotionalItems = document.getElementsByClassName("inputAdditionalItems").value;
+          let MaxInputHotAdditotionalItems = document.getElementById("totalAdditionalItems").value;
+          console.log(inputHotAdditotionalItems);
+          var inputValueAdditionalItems = input.value;
+            var newValueAdditionalItems = parseInt(inputValueAdditionalItems) + 1;
+            //console.log(newValueMenu);
+            input.value = newValueAdditionalItems;
+
+            getTotalAdditionalItems();
+        });
+      }
+
+      for (var i = 0; i < decrementButtonAddtionalItems.length; i++) {
+        var button = decrementButtonAddtionalItems[i];
+        button.addEventListener("click", function (event) {
+          var buttonClicked = event.target;
+          //console.log(buttonClicked)
+          var input = buttonClicked.parentElement.children[2];
+          //console.log(input);
+
+          let inputValueAdditionalItems = input.value;
+          let newValueAdditionalItems = parseInt(inputValueAdditionalItems) - 1;
+          console.log(parseInt(newValueAdditionalItems));
+          //console.log(newValueMenu);
+          if (parseInt(newValueAdditionalItems) >= 0) {
+            input.value = newValueAdditionalItems;
+            //console.log(newValue);
+          } else {
+            input.value = 0;
+            //alert('QTY CAN NOT LESS THAN SERO');
+          }
+          getTotalAdditionalItems();
+        });
+      } 
+
+    // Total Input Menu
+      function getTotal() {
+        var arr = document.querySelectorAll(".inputmenu");
+        var total = 0;
+        for (var i = 0; i < arr.length; i++) {
+          if (parseInt(arr[i].value)) {
+            total += parseInt(arr[i].value);
+          }
+        }
+
+        document.getElementById("total").value = total;
+      }
+
+      // Total Eags
+      function getTotalEggs() {
+        var arr = document.querySelectorAll(".inputEggsMenu");
+        var totalSideMenu = 0;
+        for (var i = 0; i < arr.length; i++) {
+          if (parseInt(arr[i].value)) {
+            totalSideMenu += parseInt(arr[i].value);
+          }
+        }
+
+        document.getElementById("totalEggsMenu").value = totalSideMenu;
+      }
+
+      // Total Side Dhises
+
+      function getTotalSideDishes() {
+        var arr = document.querySelectorAll(".inputSideDishes");
+        var totalSideMenu = 0;
+        for (var i = 0; i < arr.length; i++) {
+          if (parseInt(arr[i].value)) {
+            totalSideMenu += parseInt(arr[i].value);
+          }
+        }
+
+        document.getElementById("totalSideDishes").value = totalSideMenu;
+      }
+
+      // Total Fried Menu
+
+      function getTotalFriedMenu() {
+        var arr = document.querySelectorAll(".inputFriedMenu");
+        var totalFriedMenu = 0;
+        for (var i = 0; i < arr.length; i++) {
+          if (parseInt(arr[i].value)) {
+            totalFriedMenu += parseInt(arr[i].value);
+          }
+        }
+
+        document.getElementById("totalFriedMenu").value = totalFriedMenu;
+      }
+
+      // Total Bakkery Menu
+
+      function getTotalBakeryMenu() {
+        var arr = document.querySelectorAll(".inputBakeryMenu");
+        var totalBakeryMenu = 0;
+        for (var i = 0; i < arr.length; i++) {
+          if (parseInt(arr[i].value)) {
+            totalBakeryMenu += parseInt(arr[i].value);
+          }
+        }
+
+        document.getElementById("totalBakeryMenu").value = totalBakeryMenu;
+      }
+
+      // Total Fresh Fruit
+
+      function getTotalFreshFruit() {
+        var arr = document.querySelectorAll(".inputFruit");
+        var totalFreastFruit = 0;
+        for (var i = 0; i < arr.length; i++) {
+          if (parseInt(arr[i].value)) {
+            totalFreastFruit += parseInt(arr[i].value);
+          }
+        }
+
+        document.getElementById("totalFreshFruit").value = totalFreastFruit;
+      }
+
+      // Total Hot Drinks
+
+      function getTotalHotDrinks() {
+        var arr = document.querySelectorAll(".inputHotDrinks");
+        var totalHotDrinks = 0;
+        for (var i = 0; i < arr.length; i++) {
+          if (parseInt(arr[i].value)) {
+            totalHotDrinks += parseInt(arr[i].value);
+          }
+        }
+
+        document.getElementById("totalHotDrinks").value = totalHotDrinks;
+      }
+
+      // Total FruitJuices
+
+      function getTotalFruitJuices() {
+        var arr = document.querySelectorAll(".inputFruitJuices");
+        var totalFruitJuices = 0;
+        for (var i = 0; i < arr.length; i++) {
+          if (parseInt(arr[i].value)) {
+            totalFruitJuices += parseInt(arr[i].value);
+          }
+        }
+
+        document.getElementById("totalFruitJuices").value = totalFruitJuices;
+      }
+      
+      // Total Additional Items
+
+      function getTotalAdditionalItems() {
+        var arr = document.querySelectorAll(".inputAdditionalItems");
+        var totalAdditionalItems = 0;
+        for (var i = 0; i < arr.length; i++) {
+          if (parseInt(arr[i].value)) {
+            totalAdditionalItems += parseInt(arr[i].value);
+          }
+        }
+
+        document.getElementById("totalAdditionalItems").value = totalAdditionalItems;
+      }
+
+      
+      // Animasi 
+      // function slideUp(el) {
+        // let animasi = document.getElementById("BugisBreakfast").value;
+        // let elem = document.getElementById(el);
+        // button.addEventListener("click", function(event) {
+          // if (parseInt(animasi)>1) {
+            // elem.style.transition = "all 2s ease-in-out";
+            // elem.style.height = "0px";
+          // }
+          // })
+        // }
+
+      function slideDown(el) {
+      let elem = document.getElementById(el);
+      elem.style.transition = "all 2s ease-in-out";
+      elem.style.height = "270px";
+      }
+      function slideDown2(el) {
+      let elem = document.getElementById(el);
+      elem.style.transition = "all 2s ease-in-out";
+      elem.style.height = "50px";
+      }
+      function slideDown3(el) {
+      let elem = document.getElementById(el);
+      elem.style.transition = "all 2s ease-in-out";
+      elem.style.height = "100px";
+      }
+
+      
+  </script>
+  </body>
+  </html>
+  
