@@ -25,16 +25,18 @@
   </head>
   <body class="p-3 bg-light " >
     <h1 class="Intro">Order Breakfast</h1>
+    <form action="" >
     <section >
-      <div class="box_pembungkus shadow p-3 mb-5 bg-body rounded container">
-        <div class="container">
-          <div class="row align-items-start container">
-            <div class="col container">
-            <div class="row mb-4">
-              <label for="colFormLabelSm" class="control-label col-sm-auto col-form-label col-form-label-md ">Villa Name</label>
+
+        <div class="box_pembungkus shadow p-3 mb-5 bg-body rounded container">
+          <div class="container">
+            <div class="row align-items-start container">
+              <div class="col container">
+                <div class="row mb-4">
+                  <label for="colFormLabelSm" class="control-label col-sm-auto col-form-label col-form-label-md ">Villa Name</label>
               <div class="col-sm-auto">
-                <select type="text" class="form-select form-select-sm m-1" id="VillaName" placeholder="col-form-label-auto">
-                  <option selected>Please Choose</option>
+                <select type="text" class="form-select form-select-sm m-1" id="VillaName" placeholder="col-form-label-auto"  >
+                  <option selected value="">Please Choose</option>
                   <option value="Villa Alam">Villa Alam</option>
                   <option value="Villa Alore">Villa Alore</option>
                   <option value="Villa An Tan">Villa An Tan</option>
@@ -68,11 +70,11 @@
             </div>
             <div class="row mb-4">
               <label for="colFormLabelSm" class="label_date control-label col-sm-auto col-form-label col-form-label-auto"
-                >Date&Time 
-                <br>
-                To serve</label>
+              >Date&Time 
+              <br>
+              To serve</label>
               <div class="col-sm-auto">
-                <input type="datetime-local" class=" form-select form-select-sm" id="DateTime" placeholder="col-form-label-sm"></input>
+                <input type="datetime-local" class=" form-select form-select-sm" id="DateTime" placeholder="col-form-label-sm"  ></input>
               </div>
             </div>
           </div>
@@ -82,14 +84,14 @@
               <label for="colFormLabelSm" class=" p-1 label_nama control-label col-sm-auto col-form-label col-form-label-auto"
               >Your Name</label>
               <div class="col-sm-auto">
-                <input type="text" class=" form-control form-control-sm m-2" id="GuestName" placeholder="Enter Your Name"></input>
+                <input type="text" class=" form-control form-control-sm m-2" id="GuestName" placeholder="Enter Your Name" ></input>
               </div>
             </div>
             <div class="row mb-4">
               <label for="colFormLabelSm" class=" p-2 label_email control-label col-sm-auto col-form-label col-form-label-auto"
               >Your Email</label>
               <div class="col-sm-auto">
-                <input type="text" class=" form-control form-control-sm m-2" id="GuestEmail" placeholder="Enter Your Email"></input>
+                <input type="text" class=" form-control form-control-sm m-2" id="GuestEmail" placeholder="Enter Your Email"  ></input>
               </div>
             </div>
           </div>
@@ -116,36 +118,36 @@
             https://villabugis.com/complimentary-breakfast
           </a>
           <br/>
-        Indicate total number of people at the start of each main category of either Bugis, Indonesian or Continental Breakfast and then the breakdown Eg 4 x Bugis Breakfast - consisting of 3 Fried Eggs and 1 Scrambled eggs – and number of side or optional dishes – eg 4 x bacon and 4 x Sausages – and then also desired drinks eg 4 x coffee and any fruit if desired.</h1>
-    </div>
-  </section>
-  <section >
-    <div class="box_pembungkus shadow mb-5 bg-body rounded container">
-      <div class="container"> 
-        <div class=" row-md-auto">
-          <div class="col-md-auto">
-            <div class="box2">
-              <button onclick="slideUp('animasi1')" class="decMenu btn btn-outline-secondary button" type="button">-</button>
-                <input disabled  type="number" name="qty" id="BugisBreakfast" value="0" class="inputmenu" />
-              <button onclick="slideDown('animasi1')" class="incMenu btn btn-outline-secondary button"  type="button">+</button>
-            <div class="container ">  
-          <div class="col-md-auto">
-        <div class=" container PembungkusMenu">
-          <h5 class="" >Bugis Breakfast</h5>
-            <p class="">Included with the Bugis Breakfast - your choice of eggs (all orders come with toast, fresh fruit and juices and hot drinks - please add in relevant section below):</p>
-          </div>
+          Indicate total number of people at the start of each main category of either Bugis, Indonesian or Continental Breakfast and then the breakdown Eg 4 x Bugis Breakfast - consisting of 3 Fried Eggs and 1 Scrambled eggs – and number of side or optional dishes – eg 4 x bacon and 4 x Sausages – and then also desired drinks eg 4 x coffee and any fruit if desired.</h1>
         </div>
-      </div>
-    </div>
-    <div id="animasi1">
-      <div class="row justify-content-end container  "  >
-        <div class="col-sm-auto ">
-        <div class="container scrambledEggs m-2">
-          <div class="col-sm-auto box3">
-            <div class="input-group input-group-sm">
-              <button class="decEggsMenu btn btn-outline-secondary button" type="button">-</button>
-              <div class="InputNamaMenu input-group-text">Scrambled eggs</div>
-              <input type="text" name="qty" id="Scrambled_eggs" value="0" class="inputEggsMenu" />
+      </section>
+      <section >
+        <div class="box_pembungkus shadow mb-5 bg-body rounded container">
+          <div class="container"> 
+            <div class=" row-md-auto">
+              <div class="col-md-auto">
+                <div class="box2">
+                  <button onclick="slideUp('animasi1')" class="decMenu btn btn-outline-secondary button" type="button">-</button>
+                  <input disabled  type="number" name="qty" id="BugisBreakfast" value="0" class="inputmenu" />
+                  <button onclick="slideDown('animasi1')" class="incMenu btn btn-outline-secondary button"  type="button">+</button>
+                  <div class="container ">  
+                    <div class="col-md-auto">
+                      <div class=" container PembungkusMenu">
+                        <h5 class="" >Bugis Breakfast</h5>
+                        <p class="">Included with the Bugis Breakfast - your choice of eggs (all orders come with toast, fresh fruit and juices and hot drinks - please add in relevant section below):</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="animasi1">
+                  <div class="row justify-content-end container  "  >
+                    <div class="col-sm-auto ">
+                      <div class="container scrambledEggs m-2">
+                        <div class="col-sm-auto box3">
+                          <div class="input-group input-group-sm">
+                            <button class="decEggsMenu btn btn-outline-secondary button" type="button">-</button>
+                            <div class="InputNamaMenu input-group-text">Scrambled eggs</div>
+                            <input type="text" name="qty" id="Scrambled_eggs" value="0" class="inputEggsMenu" />
               <button class="incEggsMenu btn btn-outline-secondary button" type="button">+</button>
             </div>
           </div>
@@ -166,23 +168,23 @@
           <div class="col-sm-auto box3">
             <div class="input-group input-group-sm">
               <button class="decEggsMenu btn btn-outline-secondary button">-</button>
-                <div class="InputNamaMenu input-group-text">Boiled eggs</div>
-                <input type="text" name="qty" id="Boiled_eggs" value="0" class="inputEggsMenu" />
-                <button class="incEggsMenu btn btn-outline-secondary button">+</button>
-              </div>
-            </div>
-          </div>
-        <div class="container scrambledEggs m-2">
-          <div class="col-sm-auto box3">
-            <div class="input-group input-group-sm">
-                <button class="decEggsMenu btn btn-outline-secondary button">-</button>
-                <div class="InputNamaMenu input-group-text">Poached eggs</div>
-                <input type="text" name="qty" id="Poached_eggs" value="0" class="inputEggsMenu" />
-                <button class="incEggsMenu btn btn-outline-secondary button">+</button>
-              </div>
+              <div class="InputNamaMenu input-group-text">Boiled eggs</div>
+              <input type="text" name="qty" id="Boiled_eggs" value="0" class="inputEggsMenu" />
+              <button class="incEggsMenu btn btn-outline-secondary button">+</button>
             </div>
           </div>
         </div>
+        <div class="container scrambledEggs m-2">
+          <div class="col-sm-auto box3">
+            <div class="input-group input-group-sm">
+              <button class="decEggsMenu btn btn-outline-secondary button">-</button>
+              <div class="InputNamaMenu input-group-text">Poached eggs</div>
+              <input type="text" name="qty" id="Poached_eggs" value="0" class="inputEggsMenu" />
+              <button class="incEggsMenu btn btn-outline-secondary button">+</button>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="col-sm-auto ">
         <div class="container scrambledEggs m-2">
           <div class="col-sm-auto box3">
@@ -240,24 +242,24 @@
         <div class="container scrambledEggs m-2">
           <div class="col-sm-auto box3">
             <div class="input-group input-group-sm">
-                <button class="decSideDishes btn btn-outline-secondary button">-</button>
-                <div class="InputNamaMenu input-group-text">Potatoes</div>
-                <input type="text" name="qty" id="Potatoes" value="0" class="inputSideDishes" />
-                <button class="incSideDishes btn btn-outline-secondary button">+</button>
-              </div>
-            </div>
-          </div>
-          <div class="container scrambledEggs m-2">
-          <div class="col-sm-auto box3">
-            <div class="input-group input-group-sm">
               <button class="decSideDishes btn btn-outline-secondary button">-</button>
-                <div class="InputNamaMenu input-group-text">Tomatoes</div>
-                <input type="text" name="qty" id="Tomatoes" value="0" class="inputSideDishes" />
-                <button class="incSideDishes btn btn-outline-secondary button">+</button>
-              </div>
+              <div class="InputNamaMenu input-group-text">Potatoes</div>
+              <input type="text" name="qty" id="Potatoes" value="0" class="inputSideDishes" />
+              <button class="incSideDishes btn btn-outline-secondary button">+</button>
             </div>
           </div>
         </div>
+        <div class="container scrambledEggs m-2">
+          <div class="col-sm-auto box3">
+            <div class="input-group input-group-sm">
+              <button class="decSideDishes btn btn-outline-secondary button">-</button>
+              <div class="InputNamaMenu input-group-text">Tomatoes</div>
+              <input type="text" name="qty" id="Tomatoes" value="0" class="inputSideDishes" />
+              <button class="incSideDishes btn btn-outline-secondary button">+</button>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="col-sm-auto ">
         <div class="container scrambledEggs m-2">
           <div class="col-sm-auto box3">
@@ -280,10 +282,10 @@
           </div>
         </div>
       </div>
-      </div>
-
     </div>
+    
   </div>
+</div>
 </section>
 
 <!-- menu indonesia -->
@@ -293,16 +295,16 @@
       <div class="row">
         <div class="col align-self-start">
           <div class="col-sm-auto box2">
-            <button class="decMenu btn btn-outline-secondary button " type="button">-</button>
+            <button class="decMenu btn btn-outline-secondary button " onclick="slideUp('animasi2')" type="button">-</button>
             <input disabled type="number" name="qty" id="IndonesianBreakfast" value="0" class="inputmenu" />
             <button class="incMenu btn btn-outline-secondary button" onclick="slideDown2('animasi2')" type="button">+</button>
-                <div class=" container PembungkusMenu">
-                  <h5 class="">Indonesian Breakfast</h5>
-                  <p class="">Served with fresh fruit and juices and hot drinks - please add in relevant section below:</p>
-                </div>
-              </div>
+            <div class=" container PembungkusMenu">
+              <h5 class="">Indonesian Breakfast</h5>
+              <p class="">Served with fresh fruit and juices and hot drinks - please add in relevant section below:</p>
             </div>
           </div>
+        </div>
+      </div>
           <div class="row justify-content-start container BatasIndonesian " id="animasi2">
             <div class="col-1"></div>
             <div class="col-sm-auto ">
@@ -321,40 +323,40 @@
               <div class="container scrambledEggs m-2">
                 <div class="col-sm-auto box3">
                   <div class="input-group input-group-sm">
-                      <button class="decFriedMenu btn btn-outline-secondary button">-</button>
-                      <div class="InputNamaMenu input-group-text">Fried Noodles</div>
-                      <input type="text" name="qty" id="Fried Noodles" value="0" class="inputFriedMenu" />
-                      <button class="incFriedMenu btn btn-outline-secondary button">+</button>
-                      </div>
+                    <button class="decFriedMenu btn btn-outline-secondary button">-</button>
+                    <div class="InputNamaMenu input-group-text">Fried Noodles</div>
+                    <input type="text" name="qty" id="Fried Noodles" value="0" class="inputFriedMenu" />
+                    <button class="incFriedMenu btn btn-outline-secondary button">+</button>
                   </div>
-                </div>
-          </div>
-        </div> 
-        </div>
-      </div>    
-    </div>
-     
-    </section>
-
-    <section>
-    <div class="box_pembungkus shadow p-3 mb-5 bg-body rounded container">
-        <div class="container">
-          <div class="row">
-            <div class="col align-self-start">
-              <div class="col-sm-auto box2">
-                <button class="decMenu btn btn-outline-secondary button" type="button">-</button>
-                  <input disabled type="number" name="qty" id="ContinentalBreakfast" value="0" class="inputmenu" />
-                <button class="incMenu btn btn-outline-secondary button" onclick="slideDown3('animasi3')" type="button">+</button>
-                <div class=" container PembungkusMenu">
-                  <h5 class="">Continental Breakfast</h5>
-                  <p class="">Served with fresh fruit and juices and hot drinks - please add in relevant section below:</p>
                 </div>
               </div>
             </div>
+          </div> 
+        </div>
+      </div>    
+    </div>
+    
+  </section>
+  
+  <section>
+    <div class="box_pembungkus shadow p-3 mb-5 bg-body rounded container">
+      <div class="container">
+        <div class="row">
+          <div class="col align-self-start">
+            <div class="col-sm-auto box2">
+              <button class="decMenu btn btn-outline-secondary button" onclick="slideUp('animasi3')" type="button">-</button>
+              <input disabled type="number" name="qty" id="ContinentalBreakfast" value="0" class="inputmenu" />
+              <button class="incMenu btn btn-outline-secondary button" onclick="slideDown3('animasi3')" type="button">+</button>
+              <div class=" container PembungkusMenu">
+                <h5 class="">Continental Breakfast</h5>
+                <p class="">Served with fresh fruit and juices and hot drinks - please add in relevant section below:</p>
+              </div>
+            </div>
           </div>
-          <div class="row justify-content-end container  " id="animasi3">
-            <div class="col-sm-auto ">
-              <div class="container scrambledEggs m-2">
+        </div>
+        <div class="row justify-content-end container  " id="animasi3">
+          <div class="col-sm-auto ">
+            <div class="container scrambledEggs m-2">
                 <div class="col-sm-auto box3">
                   <div class="input-group input-group-sm">
                     <button class="decBakeryMenu btn btn-outline-secondary button" type="button">-</button>
@@ -379,24 +381,24 @@
               <div class="container scrambledEggs m-2">
                 <div class="col-sm-auto box3">
                   <div class="input-group input-group-sm">
-                      <button class="decBakeryMenu btn btn-outline-secondary button">-</button>
-                      <div class="InputNamaMenu input-group-text">Danish Pastries</div>
-                      <input type="text" name="qty" id="Danish Pastries" value="0" class="inputBakeryMenu" />
-                      <button class="incBakeryMenu btn btn-outline-secondary button">+</button>
-                      </div>
-                  </div>
-                </div>
-              <div class="container scrambledEggs m-2">
-                <div class="col-sm-auto box3">
-                  <div class="input-group input-group-sm">
-                      <button class="decBakeryMenu btn btn-outline-secondary button">-</button>
-                      <div class="InputNamaMenu input-group-text">Muffins</div>
-                      <input type="text" name="qty" id="Muffins" value="0" class="inputBakeryMenu" />
-                      <button class="incBakeryMenu btn btn-outline-secondary button">+</button>
-                    </div>
+                    <button class="decBakeryMenu btn btn-outline-secondary button">-</button>
+                    <div class="InputNamaMenu input-group-text">Danish Pastries</div>
+                    <input type="text" name="qty" id="Danish Pastries" value="0" class="inputBakeryMenu" />
+                    <button class="incBakeryMenu btn btn-outline-secondary button">+</button>
                   </div>
                 </div>
               </div>
+              <div class="container scrambledEggs m-2">
+                <div class="col-sm-auto box3">
+                  <div class="input-group input-group-sm">
+                    <button class="decBakeryMenu btn btn-outline-secondary button">-</button>
+                    <div class="InputNamaMenu input-group-text">Muffins</div>
+                    <input type="text" name="qty" id="Muffins" value="0" class="inputBakeryMenu" />
+                    <button class="incBakeryMenu btn btn-outline-secondary button">+</button>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div class="col-sm-auto ">
               <div class="container scrambledEggs m-2">
                 <div class="col-sm-auto box3">
@@ -424,66 +426,66 @@
       </div>
       
     </section>
-
+    
     <section>
     <div class="box_pembungkus shadow p-3 mb-5 bg-body rounded container">
-        <div class="container">
-          <div class="row justify-content-start container ">
-            <dir class="col-1 m-1"></dir>
-            <div class="col align-self-start">
-              <div class="col-sm-auto box2">
-                <div class=" container PembungkusMenu">
-                  <h5 class="">Fresh Fruit Sliced :</h5>
-                  <p class="">Selection of maximum 3 x fruit per breakfast order eg if 4 breakfasts, total should be 12 below</p>
+      <div class="container">
+        <div class="row justify-content-start container ">
+          <dir class="col-1 m-1"></dir>
+          <div class="col align-self-start">
+            <div class="col-sm-auto box2">
+              <div class=" container PembungkusMenu">
+                <h5 class="">Fresh Fruit Sliced :</h5>
+                <p class="">Selection of maximum 3 x fruit per breakfast order eg if 4 breakfasts, total should be 12 below</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-end container ">
+          <div class="col-sm-auto ">
+            <div class="container scrambledEggs m-2">
+              <div class="col-sm-auto box3">
+                <div class="input-group input-group-sm">
+                  <button class="decFruit btn btn-outline-secondary button" type="button">-</button>
+                  <div class="InputNamaMenu input-group-text">Pineapple</div>
+                  <input type="text" name="qty" id="Pineapple" value="0" class="inputFruit" />
+                  <button class="incFruit btn btn-outline-secondary button" type="button">+</button>
+                </div>
+              </div>
+            </div>
+            <div class="container scrambledEggs m-2">
+              <div class="col-md-auto box3">
+                <div class="input-group input-group-sm">
+                  <button class="decFruit btn btn-outline-secondary button">-</button>
+                  <div class=" InputNamaMenu input-group-text">Honeydew Melon</div>
+                  <input type="text" name="qty" id="Honeydew Melon" value="0" class="inputFruit" />
+                  <button class="incFruit btn btn-outline-secondary button">+</button>
                 </div>
               </div>
             </div>
           </div>
-          <div class="row justify-content-end container ">
-            <div class="col-sm-auto ">
-              <div class="container scrambledEggs m-2">
-                <div class="col-sm-auto box3">
-                  <div class="input-group input-group-sm">
-                    <button class="decFruit btn btn-outline-secondary button" type="button">-</button>
-                    <div class="InputNamaMenu input-group-text">Pineapple</div>
-                    <input type="text" name="qty" id="Pineapple" value="0" class="inputFruit" />
-                    <button class="incFruit btn btn-outline-secondary button" type="button">+</button>
-                  </div>
-                </div>
-              </div>
-              <div class="container scrambledEggs m-2">
-                <div class="col-md-auto box3">
-                  <div class="input-group input-group-sm">
-                    <button class="decFruit btn btn-outline-secondary button">-</button>
-                    <div class=" InputNamaMenu input-group-text">Honeydew Melon</div>
-                    <input type="text" name="qty" id="Honeydew Melon" value="0" class="inputFruit" />
-                    <button class="incFruit btn btn-outline-secondary button">+</button>
-                  </div>
+          <div class="col-sm-auto ">
+            <div class="container scrambledEggs m-2">
+              <div class="col-sm-auto box3">
+                <div class="input-group input-group-sm">
+                  <button class="decFruit btn btn-outline-secondary button">-</button>
+                  <div class="InputNamaMenu input-group-text">Water Melon</div>
+                  <input type="text" name="qty" id="Water Melon" value="0" class="inputFruit" />
+                  <button class="incFruit btn btn-outline-secondary button">+</button>
                 </div>
               </div>
             </div>
-            <div class="col-sm-auto ">
-              <div class="container scrambledEggs m-2">
-                <div class="col-sm-auto box3">
-                  <div class="input-group input-group-sm">
-                      <button class="decFruit btn btn-outline-secondary button">-</button>
-                      <div class="InputNamaMenu input-group-text">Water Melon</div>
-                      <input type="text" name="qty" id="Water Melon" value="0" class="inputFruit" />
-                      <button class="incFruit btn btn-outline-secondary button">+</button>
-                      </div>
-                  </div>
-                </div>
-              <div class="container scrambledEggs m-2">
-                <div class="col-sm-auto box3">
-                  <div class="input-group input-group-sm">
-                      <button class="decFruit btn btn-outline-secondary button">-</button>
-                      <div class="InputNamaMenu input-group-text">Pepaya</div>
-                      <input type="text" name="qty" id="Pepaya" value="0" class="inputFruit" />
-                      <button class="incFruit btn btn-outline-secondary button">+</button>
-                    </div>
-                  </div>
+            <div class="container scrambledEggs m-2">
+              <div class="col-sm-auto box3">
+                <div class="input-group input-group-sm">
+                  <button class="decFruit btn btn-outline-secondary button">-</button>
+                  <div class="InputNamaMenu input-group-text">Pepaya</div>
+                  <input type="text" name="qty" id="Pepaya" value="0" class="inputFruit" />
+                  <button class="incFruit btn btn-outline-secondary button">+</button>
                 </div>
               </div>
+            </div>
+          </div>
             <div class="col-sm-auto ">
               <div class="container scrambledEggs m-2">
                 <div class="col-sm-auto box3">
@@ -522,9 +524,9 @@
                 <div class="col-sm-auto box3">
                   <div class="input-group input-group-sm">
                     <button class="decHotDrinks btn btn-outline-secondary button" type="button">-</button>
-                      <div class="InputNamaMenu input-group-text">Coffee</div>
-                      <input type="text" name="qty" id="Coffee" value="0" class="inputHotDrinks" />
-                      <button class="incHotDrinks btn btn-outline-secondary button" type="button">+</button>
+                    <div class="InputNamaMenu input-group-text">Coffee</div>
+                    <input type="text" name="qty" id="Coffee" value="0" class="inputHotDrinks" />
+                    <button class="incHotDrinks btn btn-outline-secondary button" type="button">+</button>
                   </div>
                 </div>
               </div>
@@ -533,151 +535,151 @@
               <div class="container scrambledEggs m-1 ">
                 <div class="col-sm-auto box3">
                   <div class="input-group input-group-sm">
-                      <button class="decHotDrinks btn btn-outline-secondary button">-</button>
-                      <div class="InputNamaMenu input-group-text">Tea</div>
-                      <input type="text" name="qty" id="Tea" value="0" class="inputHotDrinks" />
-                      <button class="incHotDrinks btn btn-outline-secondary button">+</button>
-                      </div>
+                    <button class="decHotDrinks btn btn-outline-secondary button">-</button>
+                    <div class="InputNamaMenu input-group-text">Tea</div>
+                    <input type="text" name="qty" id="Tea" value="0" class="inputHotDrinks" />
+                    <button class="incHotDrinks btn btn-outline-secondary button">+</button>
                   </div>
                 </div>
-          </div>
-        </div> 
+              </div>
+            </div>
+          </div> 
         </div>
       </div>    
     </div>
-     
-    </section>
-
-    <section>
-      <div class="box_pembungkus shadow p-3 mb-5 bg-body rounded container">
-          <div class="container">
-            <div class="row justify-content-start container ">
-              <dir class="col-1 m-1"></dir>
-              <div class="col align-self-start">
-                <div class="col-sm-auto box2">
-                  <div class=" container PembungkusMenu">
-                    <h5 class="">Fruit juices :</h5>
-                  </div>
+    
+  </section>
+  
+  <section>
+    <div class="box_pembungkus shadow p-3 mb-5 bg-body rounded container">
+      <div class="container">
+        <div class="row justify-content-start container ">
+          <dir class="col-1 m-1"></dir>
+          <div class="col align-self-start">
+            <div class="col-sm-auto box2">
+              <div class=" container PembungkusMenu">
+                <h5 class="">Fruit juices :</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-end container ">
+          <div class="col-sm-auto ">
+            <div class="container scrambledEggs m-2">
+              <div class="col-sm-auto box3">
+                <div class="input-group input-group-sm">
+                  <button class="decFruitJuices btn btn-outline-secondary button" type="button">-</button>
+                  <div class="InputNamaMenu input-group-text">Orange</div>
+                  <input type="text" name="qty" id="Orange" value="0" class="inputFruitJuices" />
+                  <button class="incFruitJuices btn btn-outline-secondary button" type="button">+</button>
                 </div>
               </div>
             </div>
-            <div class="row justify-content-end container ">
-              <div class="col-sm-auto ">
-                <div class="container scrambledEggs m-2">
-                  <div class="col-sm-auto box3">
-                    <div class="input-group input-group-sm">
-                      <button class="decFruitJuices btn btn-outline-secondary button" type="button">-</button>
-                      <div class="InputNamaMenu input-group-text">Orange</div>
-                      <input type="text" name="qty" id="Orange" value="0" class="inputFruitJuices" />
-                      <button class="incFruitJuices btn btn-outline-secondary button" type="button">+</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="container scrambledEggs m-2">
-                  <div class="col-md-auto box3">
-                    <div class="input-group input-group-sm">
-                      <button class="decFruitJuices btn btn-outline-secondary button">-</button>
-                      <div class=" InputNamaMenu input-group-text">Pineapple</div>
-                      <input type="text" name="qty" id="Pineapple" value="0" class="inputFruitJuices" />
-                      <button class="incFruitJuices btn btn-outline-secondary button">+</button>
-                    </div>
-                  </div>
+            <div class="container scrambledEggs m-2">
+              <div class="col-md-auto box3">
+                <div class="input-group input-group-sm">
+                  <button class="decFruitJuices btn btn-outline-secondary button">-</button>
+                  <div class=" InputNamaMenu input-group-text">Pineapple</div>
+                  <input type="text" name="qty" id="Pineapple" value="0" class="inputFruitJuices" />
+                  <button class="incFruitJuices btn btn-outline-secondary button">+</button>
                 </div>
               </div>
-              <div class="col-sm-auto ">
-                <div class="container scrambledEggs m-2">
-                  <div class="col-sm-auto box3">
-                    <div class="input-group input-group-sm">
-                        <button class="decFruitJuices btn btn-outline-secondary button">-</button>
-                        <div class="InputNamaMenu input-group-text">Honeydew Melon</div>
-                        <input type="text" name="qty" id="Honeydew Melon" value="0" class="inputFruitJuices" />
-                        <button class="incFruitJuices btn btn-outline-secondary button">+</button>
-                        </div>
-                    </div>
-                  </div>
-                <div class="container scrambledEggs m-2">
-                  <div class="col-sm-auto box3">
-                    <div class="input-group input-group-sm">
-                        <button class="decFruitJuices btn btn-outline-secondary button">-</button>
-                        <div class="InputNamaMenu input-group-text">Water Melon</div>
-                        <input type="text" name="qty" id="Water Melon" value="0" class="inputFruitJuices" />
-                        <button class="incFruitJuices btn btn-outline-secondary button">+</button>
-                      </div>
-                    </div>
-                  </div>
+            </div>
+          </div>
+          <div class="col-sm-auto ">
+            <div class="container scrambledEggs m-2">
+              <div class="col-sm-auto box3">
+                <div class="input-group input-group-sm">
+                  <button class="decFruitJuices btn btn-outline-secondary button">-</button>
+                  <div class="InputNamaMenu input-group-text">Honeydew Melon</div>
+                  <input type="text" name="qty" id="Honeydew Melon" value="0" class="inputFruitJuices" />
+                  <button class="incFruitJuices btn btn-outline-secondary button">+</button>
                 </div>
-              <div class="col-sm-auto ">
-                <div class="container scrambledEggs m-2">
-                  <div class="col-sm-auto box3">
-                    <div class="input-group input-group-sm">
-                        <button class="decFruitJuices btn btn-outline-secondary button">-</button>
-                        <div class="InputNamaMenu input-group-text">Pepaya</div>
-                        <input type="text" name="qty" id="Pepaya" value="0" class="inputFruitJuices" />
-                        <button class="incFruitJuices btn btn-outline-secondary button">+</button>
-                      </div>
-                    </div>
-                  </div>
-              <div class="col-sm-auto ">
-                <div class="container scrambledEggs m-2">
-                  <div class="col-sm-auto box3">
-                    <div class="input-group input-group-sm">
-                      <button class="decFruitJuices btn btn-outline-secondary button">-</button>
-                      <div class="InputNamaMenu input-group-text"> Seasonal Fruit </div>
-                      <input type="text" name="qty" id=" Seasonal Fruit " value="0" class="inputFruitJuices" />
-                      <button class="incFruitJuices btn btn-outline-secondary button">+</button>
-                    </div>
+              </div>
+            </div>
+            <div class="container scrambledEggs m-2">
+              <div class="col-sm-auto box3">
+                <div class="input-group input-group-sm">
+                  <button class="decFruitJuices btn btn-outline-secondary button">-</button>
+                  <div class="InputNamaMenu input-group-text">Water Melon</div>
+                  <input type="text" name="qty" id="Water Melon" value="0" class="inputFruitJuices" />
+                  <button class="incFruitJuices btn btn-outline-secondary button">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-auto ">
+            <div class="container scrambledEggs m-2">
+              <div class="col-sm-auto box3">
+                <div class="input-group input-group-sm">
+                  <button class="decFruitJuices btn btn-outline-secondary button">-</button>
+                  <div class="InputNamaMenu input-group-text">Pepaya</div>
+                  <input type="text" name="qty" id="Pepaya" value="0" class="inputFruitJuices" />
+                  <button class="incFruitJuices btn btn-outline-secondary button">+</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-auto ">
+              <div class="container scrambledEggs m-2">
+                <div class="col-sm-auto box3">
+                  <div class="input-group input-group-sm">
+                    <button class="decFruitJuices btn btn-outline-secondary button">-</button>
+                    <div class="InputNamaMenu input-group-text"> Seasonal Fruit </div>
+                    <input type="text" name="qty" id=" Seasonal Fruit " value="0" class="inputFruitJuices" />
+                    <button class="incFruitJuices btn btn-outline-secondary button">+</button>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        
-      </section>
-
+      </div>
+      
+    </section>
+    
     <section>
       <div class="box_pembungkus shadow p-3 mb-5 bg-body rounded container">
-          <div class="container">
-            <div class="row justify-content-start container ">
-              <dir class="col-1 m-1"></dir>
-              <div class="col align-self-start">
-                <div class="col-sm-auto box2">
-                  <div class=" container PembungkusMenu">
-                    <h5 class="">Additional Items</h5>
-                    <p class="mb-2" >Extra charge apply</p>
-                    <div class="row">
-                      <p class="mb-1 col-sm-auto" >BakeryItems:</p>
-                      <p class="mb-1 col-1 TagHarga" >12K/Pcs</p>
-                    </div>
+        <div class="container">
+          <div class="row justify-content-start container ">
+            <dir class="col-1 m-1"></dir>
+            <div class="col align-self-start">
+              <div class="col-sm-auto box2">
+                <div class=" container PembungkusMenu">
+                  <h5 class="">Additional Items</h5>
+                  <p class="mb-2" >Extra charge apply</p>
+                  <div class="row">
+                    <p class="mb-1 col-sm-auto" >BakeryItems:</p>
+                    <p class="mb-1 col-1 TagHarga" >12K/Pcs</p>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="row justify-content-end container ">
-              <div class="col-sm-auto ">
-                <div class="container scrambledEggs m-2 mt-0">
-                  <div class="col-sm-auto box3">
-                    <div class="input-group input-group-sm">
-                      <button class="decAdditionalItems btn btn-outline-secondary button" type="button">-</button>
-                      <div class="InputNamaMenu input-group-text">Croissant</div>
-                      <input type="text" name="qty" id="Croissant" value="0" class="inputAdditionalItems" />
-                      <button class="incAdditionalItems btn btn-outline-secondary button" type="button">+</button>
-                    </div>
+          </div>
+          <div class="row justify-content-end container ">
+            <div class="col-sm-auto ">
+              <div class="container scrambledEggs m-2 mt-0">
+                <div class="col-sm-auto box3">
+                  <div class="input-group input-group-sm">
+                    <button class="decAdditionalItems btn btn-outline-secondary button" type="button">-</button>
+                    <div class="InputNamaMenu input-group-text">Croissant</div>
+                    <input type="text" name="qty" id="Croissant" value="0" class="inputAdditionalItems" />
+                    <button class="incAdditionalItems btn btn-outline-secondary button" type="button">+</button>
                   </div>
                 </div>
               </div>
+            </div>
               <div class="col-sm-auto ">
                 <div class="container scrambledEggs m-2 mt-0 " >
                   <div class="col-sm-auto box3">
                     <div class="input-group input-group-sm">
-                        <button class="decAdditionalItems btn btn-outline-secondary button">-</button>
-                        <div class="InputNamaMenu input-group-text">Danish</div>
-                        <input type="text" name="qty" id="Danish" value="0" class="inputAdditionalItems" />
-                        <button class="incAdditionalItems btn btn-outline-secondary button">+</button>
-                        </div>
+                      <button class="decAdditionalItems btn btn-outline-secondary button">-</button>
+                      <div class="InputNamaMenu input-group-text">Danish</div>
+                      <input type="text" name="qty" id="Danish" value="0" class="inputAdditionalItems" />
+                      <button class="incAdditionalItems btn btn-outline-secondary button">+</button>
                     </div>
                   </div>
                 </div>
+              </div>
               <div class="col-sm-auto ">
                 <div class="container scrambledEggs m-2 mt-0">
                   <div class="col-sm-auto box3">
@@ -689,8 +691,8 @@
                     </div>
                   </div>
                 </div>
+              </div>
             </div>
-          </div>
           <div class="row justify-content-start container ">
             <dir class="col-1 m-1"></dir>
             <div class="col align-self-start">
@@ -721,14 +723,14 @@
               <div class="container scrambledEggs m-2 mt-0 " >
                 <div class="col-sm-auto box3">
                   <div class="input-group input-group-sm">
-                      <button class="decAdditionalItems btn btn-outline-secondary button">-</button>
-                      <div class="InputNamaMenu input-group-text">Corn flakes</div>
-                      <input type="text" name="qty" id="Corn flakes" value="0" class="inputAdditionalItems" />
-                      <button class="incAdditionalItems btn btn-outline-secondary button">+</button>
-                      </div>
+                    <button class="decAdditionalItems btn btn-outline-secondary button">-</button>
+                    <div class="InputNamaMenu input-group-text">Corn flakes</div>
+                    <input type="text" name="qty" id="Corn flakes" value="0" class="inputAdditionalItems" />
+                    <button class="incAdditionalItems btn btn-outline-secondary button">+</button>
                   </div>
                 </div>
               </div>
+            </div>
             <div class="col-sm-auto ">
               <div class="container scrambledEggs m-2 mt-0">
                 <div class="col-sm-auto box3">
@@ -740,7 +742,7 @@
                   </div>
                 </div>
               </div>
-          </div>
+            </div>
         </div>
           <div class="row justify-content-start container ">
             <dir class="col-1 m-1"></dir>
@@ -772,14 +774,14 @@
               <div class="container scrambledEggs m-2 mt-0 " >
                 <div class="col-sm-auto box3">
                   <div class="input-group input-group-sm">
-                      <button class="decAdditionalItems btn btn-outline-secondary button">-</button>
-                      <div class="InputNamaMenu input-group-text">Strawberry </div>
-                      <input type="text" name="qty" id="Strawberry Yoghurt" value="0" class="inputAdditionalItems" />
-                      <button class="incAdditionalItems btn btn-outline-secondary button">+</button>
-                      </div>
+                    <button class="decAdditionalItems btn btn-outline-secondary button">-</button>
+                    <div class="InputNamaMenu input-group-text">Strawberry </div>
+                    <input type="text" name="qty" id="Strawberry Yoghurt" value="0" class="inputAdditionalItems" />
+                    <button class="incAdditionalItems btn btn-outline-secondary button">+</button>
                   </div>
                 </div>
               </div>
+            </div>
             <div class="col-sm-auto ">
               <div class="container scrambledEggs m-2 mt-0">
                 <div class="col-sm-auto box3">
@@ -791,7 +793,7 @@
                   </div>
                 </div>
               </div>
-          </div>
+            </div>
         </div>
           <div class="row justify-content-start container ">
             <dir class="col-1 m-1"></dir>
@@ -831,23 +833,23 @@
               <div class="container scrambledEggs m-2 mt-0 " >
                 <div class="col-sm-auto box3">
                   <div class="input-group input-group-sm">
-                      <button class="decAdditionalItems btn btn-outline-secondary button">-</button>
-                      <div class="InputNamaMenu input-group-text">Ham</div>
-                      <input type="text" name="qty" id="Ham" value="0" class="inputAdditionalItems" />
-                      <button class="incAdditionalItems btn btn-outline-secondary button">+</button>
-                      </div>
+                    <button class="decAdditionalItems btn btn-outline-secondary button">-</button>
+                    <div class="InputNamaMenu input-group-text">Ham</div>
+                    <input type="text" name="qty" id="Ham" value="0" class="inputAdditionalItems" />
+                    <button class="incAdditionalItems btn btn-outline-secondary button">+</button>
                   </div>
                 </div>
+              </div>
               <div class="container scrambledEggs m-2 mt-0 " >
                 <div class="col-sm-auto box3">
                   <div class="input-group input-group-sm">
-                      <button class="decAdditionalItems btn btn-outline-secondary button">-</button>
-                      <div class="InputNamaMenu input-group-text">Potatoes </div>
-                      <input type="text" name="qty" id="Potatoes" value="0" class="inputAdditionalItems" />
-                      <button class="incAdditionalItems btn btn-outline-secondary button">+</button>
-                      </div>
+                    <button class="decAdditionalItems btn btn-outline-secondary button">-</button>
+                    <div class="InputNamaMenu input-group-text">Potatoes </div>
+                    <input type="text" name="qty" id="Potatoes" value="0" class="inputAdditionalItems" />
+                    <button class="incAdditionalItems btn btn-outline-secondary button">+</button>
                   </div>
                 </div>
+              </div>
               </div>
             <div class="col-sm-auto ">
               <div class="container scrambledEggs m-2 mt-0">
@@ -870,15 +872,15 @@
                   </div>
                 </div>
               </div>
+            </div>
           </div>
         </div>
-        </div>
       </div>
-        
-      </section>
-
+      
+    </section>
+  
       <section>
-
+        
         <div class="box_pembungkus shadow p-3 mb-5 bg-body rounded container">
           <div class="container">
             <label for="inputPassword5" class="form-label">Please advise any special food requirements or comments here:</label>
@@ -886,47 +888,48 @@
               <textarea class="form-control warnabg" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 120px"></textarea>
             </div>
             <div class="container">
-              <button class="btn-success btn mt-2 " onclick="sendMaill()">submit</button>
+              <button class="btn-success btn mt-2 " onclick="">submit</button>
             </div>
           </div>
         </div>    
       </section>
-
-    <section class="sembunyikan">
-      <div class="box_pembungkus shadow p-3 mb-5 bg-body rounded container ">
-        <div class="container">
-          <div class="row ">
-            <div class="col align-self-start container">
-              <div class="col-sm-auto box2 container">
-                <div class="box">
-                  <label>TotalOrder</label>
-                  <input type="text" id="total" value="0" disabled="" />
-                </div>
-                <div class="box">
-                  <label>Total Eggs</label>
-                  <input type="text" id="totalEggsMenu" value="0" disabled="" />
-                </div>
-                <div class="box">
-                  <label>Total SideDishes</label>
-                  <input type="text" id="totalSideDishes" value="0" disabled="" />
-                </div>
-                <div class="box">
-                  <label>Total FriedMenu</label>
-                  <input type="text" id="totalFriedMenu" value="0" disabled="" />
-                </div>
-                <div class="box">
-                  <label>Total BakeryMenu</label>
-                  <input type="text" id="totalBakeryMenu" value="0" disabled="" />
-                </div>
-                <div class="box">
-                  <label>Fresh Fruit Sliced</label>
-                  <input type="text" id="totalFreshFruit" value="0" disabled="" />
-                </div>
-                <div class="box">
-                  <label>Hot drinks</label>
-                  <input type="text" id="totalHotDrinks" value="0" disabled="" />
-                </div>
-                <div class="box">
+    </form>
+      
+      <section class="sembunyikan">
+        <div class="box_pembungkus shadow p-3 mb-5 bg-body rounded container ">
+          <div class="container">
+            <div class="row ">
+              <div class="col align-self-start container">
+                <div class="col-sm-auto box2 container">
+                  <div class="box">
+                    <label>TotalOrder</label>
+                    <input type="text" id="total" value="0" disabled="" />
+                  </div>
+                  <div class="box">
+                    <label>Total Eggs</label>
+                    <input type="text" id="totalEggsMenu" value="0" disabled="" />
+                  </div>
+                  <div class="box">
+                    <label>Total SideDishes</label>
+                    <input type="text" id="totalSideDishes" value="0" disabled="" />
+                  </div>
+                  <div class="box">
+                    <label>Total FriedMenu</label>
+                    <input type="text" id="totalFriedMenu" value="0" disabled="" />
+                  </div>
+                  <div class="box">
+                    <label>Total BakeryMenu</label>
+                    <input type="text" id="totalBakeryMenu" value="0" disabled="" />
+                  </div>
+                  <div class="box">
+                    <label>Fresh Fruit Sliced</label>
+                    <input type="text" id="totalFreshFruit" value="0" disabled="" />
+                  </div>
+                  <div class="box">
+                    <label>Hot drinks</label>
+                    <input type="text" id="totalHotDrinks" value="0" disabled="" />
+                  </div>
+                  <div class="box">
                   <label>Fruit juices</label>
                   <input type="text" id="totalFruitJuices" value="0" disabled="" />
                 </div>
@@ -1574,23 +1577,52 @@
         // }
 
       function slideDown(el) {
-      let elem = document.getElementById(el);
-      elem.style.transition = "all 2s ease-in-out";
-      elem.style.height = "270px";
-      }
-      function slideDown2(el) {
-      let elem = document.getElementById(el);
-      elem.style.transition = "all 2s ease-in-out";
-      elem.style.height = "50px";
-      }
-      function slideDown3(el) {
-      let elem = document.getElementById(el);
-      elem.style.transition = "all 2s ease-in-out";
-      elem.style.height = "100px";
+        let guest = document.getElementById("guest-input").value;
+        if (parseInt(guest) >= 1) {
+          let elem = document.getElementById(el);
+          elem.style.transition = "all 2s ease-in-out";
+          elem.style.height = "270px";
+        } else {
+          console.log("Kesalahan Di fungsi slidedown 1");
+        }
       }
 
       
-  </script>
+      function slideDown2(el) {
+        let guest = document.getElementById("guest-input").value;
+        if (parseInt(guest) >= 1) {
+          let elem = document.getElementById(el);
+          elem.style.transition = "all 2s ease-in-out";
+          elem.style.height = "50px";
+        } else {
+          console.log("Kesalahan Di fungsi slidedown 2");
+        }
+      }
+
+      function slideDown3(el) {
+        let guest = document.getElementById("guest-input").value;
+        if (parseInt(guest) >= 1) {
+          let elem = document.getElementById(el);
+          elem.style.transition = "all 2s ease-in-out";
+          elem.style.height = "100px";
+        } else {
+          console.log("Kesalahan Di fungsi slidedown 3");
+        }
+      }
+      
+      function slideUp(el) {
+        let BugisSlideUp = document.getElementById("BugisBreakfast").value;
+        if (parseInt(BugisSlideUp) <= 1) {
+          let elem = document.getElementById(el);
+          elem.style.transition = "all 2s ease-in-out";
+          elem.style.height = "0px";
+        } else {
+          console.log("Kesalahan Di fungsi slideUp");
+        }
+      }
+      
+      
+      </script>
   </body>
   </html>
   
