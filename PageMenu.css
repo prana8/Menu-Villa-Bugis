@@ -1,0 +1,185 @@
+/* section 1  */
+
+.NamaIntro {
+  font-size: 15px;
+  font-weight: 350;
+}
+.Intro {
+  font-size: 24px;
+  text-align: center;
+  margin-top: 12px;
+  font-weight: lighter;
+}
+
+.box_pembungkus {
+  display: flex;
+  padding: 10px;
+  border: #c6c6c6;
+  margin-top: 3rem;
+  border-radius: 8px;
+}
+
+.box {
+  display: flex;
+  font-size: smaller;
+  align-items: center;
+}
+
+.label_awal {
+  font-weight: 1rem !important;
+  display: inline-block;
+}
+
+.box .button {
+  width: 37px;
+  height: 37px;
+  border: 1px solid #c6c6c6;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.box .button:active {
+  background: greenyellow;
+}
+
+.box input {
+  width: 60px;
+  padding: 5px 10px;
+  border: 1px solid #c6c6c6;
+  border-radius: 5px;
+  font-size: 22px;
+  margin: 0 10px;
+}
+
+/* section 2 */
+
+.Tulisan {
+  font-weight: normal;
+  font-size: medium;
+}
+
+.linkmenu {
+  color: rgb(12, 189, 50);
+}
+
+/* section 3 */
+
+.box2 {
+  display: flex;
+  font-size: smaller;
+  align-items: center;
+}
+
+.box2 .button {
+  width: 28px;
+  height: 28px;
+  border: 1px solid #c6c6c6;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.box2 .button:active {
+  background: greenyellow;
+}
+
+.box2 input {
+  width: 50px;
+  padding: 5px 10px;
+  border: 1px solid #c6c6c6;
+  border-radius: 5px;
+  font-size: 15px;
+  margin: 0 10px;
+}
+
+.PembungkusMenu {
+  font-size: auto;
+}
+
+/* section 4 */
+
+.box3 {
+  display: flex;
+  font-size: smaller;
+  align-items: center;
+}
+
+.box3 .button {
+  width: 23px;
+  height: 22px;
+  border: 1px solid #c6c6c6;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  cursor: pointer;
+  margin: 6px;
+}
+
+.box3 .button:active {
+  background: greenyellow;
+}
+
+.box3 input {
+  width: 40px;
+  padding: 2px 8px;
+  border: 1px solid #c6c6c6;
+  border-radius: 5px;
+  font-size: 15px;
+  margin: 0 10px;
+}
+
+.InputNamaMenu {
+  width: 120px;
+}
+
+.PembungkusMenu2 {
+  margin-left: 3 rem;
+}
+
+.boxpre {
+  display: flex;
+  font-size: smaller;
+  align-items: center;
+}
+
+.fontsize {
+  font-size: small;
+  margin-left: 10px;
+}
+
+.TagHarga {
+  color: rgb(8, 100, 28);
+  font-weight: bold;
+}
+
+#animasi1 {
+  overflow: hidden;
+  height: 0;
+}
+#animasi2 {
+  overflow: hidden;
+  height: 0;
+}
+#animasi3 {
+  overflow: hidden;
+  height: 0;
+}
+
+.sembunyikan {
+  overflow: hidden;
+  height: 0;
+}
+
+.custom_Button {
+  background-color: aquamarine;
+  border-color: aquamarine;
+}
